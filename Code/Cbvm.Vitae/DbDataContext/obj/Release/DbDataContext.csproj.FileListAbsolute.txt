@@ -1,0 +1,5 @@
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\bin\Release\DbDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\bin\Release\DbDataContext.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\obj\Release\DbDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\obj\Release\DbDataContext.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\obj\Release\DbDataContext.csprojResolveAssemblyReference.cache

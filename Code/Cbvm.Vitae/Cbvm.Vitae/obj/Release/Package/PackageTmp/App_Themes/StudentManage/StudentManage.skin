@@ -1,0 +1,25 @@
+﻿<telerik:RadGrid runat="server" AutoGenerateColumns="false" PageSize="30" AllowPaging="true" AllowCustomPaging="true" >
+ <ClientSettings>
+     <ClientEvents OnRowMouseOver="RowMouseOver" OnRowMouseOut="RowMouseOut" OnRowDblClick="RowClick" OnRowDeleting="RowDeleting"></ClientEvents>
+ </ClientSettings>
+     <MasterTableView AllowCustomPaging="true" AllowPaging="true">       
+    <NoRecordsTemplate>
+      <div>没有记录!</div>
+    </NoRecordsTemplate>
+  </MasterTableView>
+<ClientSettings>
+    <Selecting AllowRowSelect="true"></Selecting>
+    <Scrolling AllowScroll="true" UseStaticHeaders="true" SaveScrollPosition="true" ScrollHeight="500px"/>
+</ClientSettings>
+    <PagerStyle Position="Bottom" Mode="NextPrevAndNumeric" PagerTextFormat="{4} 当前页 {0} 共 {1} 页, 当前记录从 {2} 到 {3} 共 {5} 条" AlwaysVisible="True" PageSizeLabelText="页条数:"/>
+</telerik:RadGrid>
+
+<telerik:RadTabStrip runat="server" Skin="Telerik" OnClientTabSelected="TabSelected"></telerik:RadTabStrip>
+<asp:Button Width="65" Height="25" runat="server" />
+<telerik:RadDatePicker runat="server">
+    <DateInput DateFormat="yyyy-MM-dd" DisplayDateFormat="yyyy-MM-dd"></DateInput>
+</telerik:RadDatePicker>
+<telerik:RadDateTimePicker runat="server">
+    <DateInput DateFormat="yyyy-MM-dd H:m:ss" DisplayDateFormat="yyyy-MM-dd H:m:ss"></DateInput>
+</telerik:RadDateTimePicker>
+

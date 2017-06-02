@@ -1,0 +1,135 @@
+/* clearfix用于父容器直接清除子元素浮动 */
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+	/* IE < 8 */
+}
+.wrap-container {
+	padding: 10px 0 30px;
+	width: 100%;
+}
+.container {
+	width: 1000px;
+	padding: 0 150px;
+	margin: auto;
+}
+.activity {
+	width: 100%;
+}
+.query {
+	padding: 10px 0 20px 30px;
+	width: 970px;
+	height:150px;
+	background: rgb(240, 240, 240);
+}
+.query ul li ,
+.query ul li label,
+.query ul li input,
+.query ul li dl {
+	float: left;
+}
+.query ul li{
+	margin-bottom: 10px;
+}
+.query ul li label{
+	font-size: 14px;
+	margin-right: 5px;
+	line-height: 30px;
+	width: 80px;
+	text-align: right;
+}
+.query ul li input{
+	height: 30px;
+	padding-left: 5px;
+	border: 1px #999 solid;
+	width: 320px;
+}
+.query ul li dl{
+	width: 75px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 14px;
+	background: #fff;
+	border: 1px #999 solid;
+	border-right: 0;
+}
+.query ul li.keyword input{
+	width: 645px;
+}
+.xszzwSearchButton{
+	float:left;
+	width:90px;
+	height:40px;
+	margin-left:405px;
+	_margin-left:202px;
+}
+.xszzwSearchClear{
+	float:left;
+	margin-left:20px;
+	_margin-left:10px;
+	width:100px;
+	height:40px;
+	line-height:40px;
+}
+.xszzwSearchClear a{
+	color:#0060a4;
+}
+.searchNotic{
+	float:left;
+	width:850px;
+	height:30px;
+	color:#979797;
+	margin-left:40px;
+	_margin-left:20px;
+}
+.searchDetail{
+	float:left;
+	width:710px;
+	margin-top:14px;
+	_margin-top:7px;
+}
+.companyLinks{
+	float:left;
+	width:228px;
+	margin-top:14px;
+	margin-left:58px;
+	_margin-left:29px;
+}
+.searchDetailTitle{
+	float:left;
+	width:95%;
+	height:50px;
+	text-align:left;
+	padding-left:5%;
+	line-height:50px;
+	background:rgb(240, 240, 240);
+}
+.searchDetailTitle select{
+	float:right;
+	border:1px solid #ccc;
+	height:30px;
+	margin:10px;
+}
+.searchDetailInfo{
+	float:left;
+	width:100%;
+	height:79px;
+	border-bottom:1px dotted #ccc;
+}
+.searchDetailInfoLine{
+	width:95%;
+	height:39px;
+	padding-left:5%;
+	overflow:hidden;
+	line-height:38px;
+}

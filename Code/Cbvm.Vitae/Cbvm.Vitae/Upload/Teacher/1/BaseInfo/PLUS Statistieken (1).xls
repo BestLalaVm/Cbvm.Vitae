@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<table cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_exportGrid_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+	<colgroup>
+		<col style="width:20px" />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col">&nbsp;</th><th scope="col">Winkel</th><th scope="col">Totaal Orders</th><th scope="col">Totaal amount</th><th scope="col">Totaal products</th><th scope="col">Average amount</th><th scope="col">Average Orders per day</th><th scope="col">Average Products per day</th>
+		</tr>
+	</thead><tbody>
+	<tr>
+		<td><input type="image" name="ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl04$GECBtnExpandColumn" id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl04_GECBtnExpandColumn" src="" /></td><td>atyvetnl.starteenwinkel.nl</td><td style="mso-number-format:0;">1</td><td style="mso-number-format:0\.00;">2,5000</td><td style="mso-number-format:0;">1</td><td style="mso-number-format:0\.00;">2,500000</td><td style="mso-number-format:0\.00;">1,000000000000</td><td style="mso-number-format:0\.00;">1,000000000000</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<tr style="border-width:0px;width:100%;">
+			<td colspan="8"><table cellspacing="0" border="0" style="width:100%;">
+				<tr>
+					<td class="rgPagerCell NextPrevAndNumeric"><div class="rgWrap rgArrPart1">
+						<input type="button" name="ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl02" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl02','')" title="Eerste pagina" class="rgPageFirst" /> <input type="button" name="ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl03" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl03','')" title="Vorige pagina" class="rgPagePrev" />
+					</div><div class="rgWrap rgNumPart">
+						<a onclick="return false;" class="rgCurrentPage" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl05','')"><span>1</span></a>
+					</div><div class="rgWrap rgArrPart2">
+						<input type="button" name="ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl08" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl08','')" title="Volgende pagina" class="rgPageNext" />  <input type="button" name="ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl09" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$ctl09','')" title="Laatste pagina" class="rgPageLast" />
+					</div><div class="rgWrap rgAdvPart">
+						<span id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_ChangePageSizeLabel" class="rgPagerLabel">Pagina items:</span><div id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_PageSizeComboBox" class="RadComboBox RadComboBox_Hay" style="width:46px;display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin-left:-1px;margin-right:-1px;white-space:normal;">
+							<table cellpadding="0" cellspacing="0" summary="combobox" border="0" style="border-width:0;">
+								<tr class="rcbReadOnly">
+									<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="ctl00$ContentPlaceHolder1$exportGrid$ctl00$ctl03$ctl01$PageSizeComboBox" type="text" class="rcbInput" id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_PageSizeComboBox_Input" value="10" readonly="readonly" /></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_PageSizeComboBox_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+								</tr>
+							</table><!-- 2009.3.1314.35 --><div class="rcbSlide" style="z-index:6000;"><div id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_PageSizeComboBox_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Hay " style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem ">10</li><li class="rcbItem ">20</li><li class="rcbItem ">50</li></ul></div></div></div><input id="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_PageSizeComboBox_ClientState" name="ctl00_ContentPlaceHolder1_exportGrid_ctl00_ctl03_ctl01_PageSizeComboBox_ClientState" type="hidden" />
+						</div>
+					</div><div class="rgWrap rgInfoPart">
+						   Pagina 1 van 1, items 1 tot 1 van 1
+					</div></td>
+				</tr>
+			</table></td>
+		</tr>
+	</tfoot>
+</table></body></html>

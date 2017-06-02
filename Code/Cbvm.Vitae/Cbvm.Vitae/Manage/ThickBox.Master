@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ThickBox.master.cs" Inherits="Cbvm.Vitae.Manage.ThickBox" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/Scripts/jqwidgets/jqwidgets/styles/jqx.base.css" />
+<%--    <script type="text/javascript" src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jqwidgets/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="/Scripts/jqwidgets/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="/Scripts/jqwidgets/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="/Scripts/jqwidgets/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="/Scripts/knockout-2.2.1.js"></script>
+    <script type="text/javascript" src="/Scripts/BaseCv.js"></script>
+    <script type="text/javascript" src="/Scripts/Prompt.js"></script>--%>
+    <%#Scripts.Render("~/Manage/BaseJs") %>
+    <%#Scripts.Render("~/Manage/Js") %>
+    <style type="text/css">
+        .main table.main-content .nav-content .page {
+            overflow: auto;
+        }
+
+        .full-loading-container {
+            display: none;
+            position: fixed;
+            z-index: 999999999999999999999999;
+            width: 100%;
+            height: 100%;
+            background-color: whiteSmoke;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            opacity: 0.8;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+
+            .full-loading-container .loading {
+                margin-top: 210px;
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                text-align: center;
+                color: red;
+            }
+    </style>
+    <script type="text/javascript">
+        function PFullActionRequest(loadingLabel) {
+            $(".full-loading-container .loading-label").html(loadingLabel);
+            $(".full-loading-container").show();
+        }
+
+        function PFullActionRequestEnd() {
+            $(".full-loading-container").hide();
+        }
+
+        function tb_removeEx() {
+            EndRequest();
+        }
+        function validate_form() {
+            BeginRequest();
+
+            if (!$("#form1").valid()) {
+                EndRequest();
+                return false;
+            } else {
+                try {
+                    //通过Page_IsValid这个值来判断RequiredFieldValidator的验证结果是否有效
+                    if (!Page_IsValid) {
+                        EndRequest();
+                        return false;
+                    }
+                } catch (e) { }
+            }
+
+            if (typeof validateSumit == "function") {
+                return validateSumit();
+            }
+            return true;
+        }
+        function ShowAjaxLoading() {
+            BeginRequest();
+        }
+
+        function HideAjaxLoading() {
+            EndRequest();
+        }
+
+        (function () {
+            BeginRequest();
+        })();
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" onsubmit="return validate_form();">
+        <asp:ScriptManager ID="scriptManage" runat="server">
+        </asp:ScriptManager>
+        <div class="body-content">
+            <div class="main">
+                <div class="wrap-container">
+                    <div class="wrap-right">
+                        <telerik:RadAjaxLoadingPanel ID="ajaxLoadingPanel" runat="server">
+                            <table style="width: 100%; height: 100%;">
+                                <tr>
+                                    <td style="width: 100%; height: 100%; vertical-align: middle; text-align: center;">
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/loadingAnimation.gif" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </telerik:RadAjaxLoadingPanel>
+                        <div class="condition">
+                            <div class="caption">
+                                <h4>搜索条件</h4>
+                            </div>
+                            <div class="container">
+                                <asp:ContentPlaceHolder ID="contentPlaceCondition" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <asp:ContentPlaceHolder ID="contentPlaceAction" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="list">
+                            <asp:ContentPlaceHolder ID="contentPlaceList" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="full-loading-container">
+        <div class="loading">
+            <img src="/Image/xubox_loading2.gif" alt="loading" />
+            <div class="loading-label"></div>
+        </div>
+    </div>
+</body>
+</html>

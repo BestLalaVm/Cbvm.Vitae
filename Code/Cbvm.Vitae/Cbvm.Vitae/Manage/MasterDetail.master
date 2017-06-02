@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Manage/SubMaster.Master" AutoEventWireup="true"
+    CodeBehind="MasterDetail.master.cs" Inherits="Cbvm.Vitae.Manage.MasterDetail" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <telerik:RadAjaxPanel ID="ajaxPanel" runat="server" EnableAJAX="False" LoadingPanelID="ajaxLoadingPanel" ClientEvents-OnResponseEnd="ResponseEnd">
+    <div class="detail">
+        <asp:ContentPlaceHolder ID="contentPlaceDetail" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        </telerik:RadAjaxPanel>
+</asp:Content>

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Manage/SubMaster.Master" AutoEventWireup="true"
+    CodeBehind="MasterList.master.cs" Inherits="Cbvm.Vitae.Manage.MasterList" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="contentHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .condition .edit-text {
+            height: 18px;
+        }
+    </style>
+    <script type="text/javascript">
+        function getInputBoxHeight() {
+            return 22;
+        }
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <telerik:RadAjaxPanel ID="ajaxPanel" runat="server" LoadingPanelID="ajaxLoadingPanel" ClientEvents-OnResponseEnd="ResponseEnd">
+        <div class="condition">
+            <div class="caption">
+                <h4>搜索条件</h4>
+            </div>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="contentPlaceCondition" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div class="action">
+            <asp:ContentPlaceHolder ID="contentPlaceAction" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="list">
+            <asp:ContentPlaceHolder ID="contentPlaceList" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </telerik:RadAjaxPanel>
+</asp:Content>

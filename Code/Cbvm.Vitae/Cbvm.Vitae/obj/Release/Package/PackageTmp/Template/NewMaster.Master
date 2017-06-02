@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NewMaster.master.cs" Inherits="Cbvm.Vitae.Template.NewMaster" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<%@ Register Src="~/Template/UserControl/StudentSearchWidget.ascx" TagName="StudentSearchWidget" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/MenuControl.ascx" TagName="MenuControl" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/StudentTop20Widget.ascx" TagName="StudentTop20Widget" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/UserStatusControl.ascx" TagName="UserStatusControl" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/EmployedStudentsWidget.ascx" TagName="EmployedStudentsWidget" TagPrefix="uc" %>
+<%@ Register Src="~/UserControl/ThirdLogoutControl.ascx" TagName="ThirdLogoutControl" TagPrefix="uc" %>
+<%@ Register Src="~/UserControl/TopHeader.ascx" TagName="TpHeader" TagPrefix="uc1" %>
+<%@ Register Src="~/UserControl/TopBarnarControl.ascx" TagName="TpBarnarControl" TagPrefix="uc1" %>
+<%@ Register Src="~/UserControl/NavMapBottom.ascx" TagName="NvMapBottom" TagPrefix="uc1" %>
+<%@ Register Src="~/UserControl/FooterBottom.ascx" TagName="FtBottom" TagPrefix="uc1" %>
+<%@ Register Src="~/UserControl/TopHeader2.ascx" TagName="TpHeader2" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%#Scripts.Render("~/Manage/BaseJs") %>
+    <%#Scripts.Render("~/Manage/FrontJs") %>
+    <link type="text/css" rel="Stylesheet" href="/Content/style/common.css" />
+    <link type="text/css" rel="Stylesheet" href="/Content/style/index.css" />
+    <style type="text/css">
+        .top-navigate {
+            height: 20px;
+        }
+    </style>
+    <style type="text/css">
+        .main table.main-content .nav-content .page {
+            overflow: auto;
+        }
+
+        .full-loading-container {
+            display: none;
+            position: fixed;
+            z-index: 999999999999999999999999;
+            width: 100%;
+            height: 100%;
+            background-color: whiteSmoke;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            opacity: 0.8;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+
+            .full-loading-container .loading {
+                margin-top: 210px;
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                text-align: center;
+                color: red;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" onsubmit="return beforeSubmit();">
+        <asp:ScriptManager ID="scriptManage" runat="server"></asp:ScriptManager>
+        <uc1:TpHeader2 id="tpHeader1" runat="server"></uc1:TpHeader2>
+        <asp:ContentPlaceHolder ID="contentMain" runat="server">
+        </asp:ContentPlaceHolder>
+        <uc1:NvMapBottom id="nvMapBottom" runat="server"></uc1:NvMapBottom>
+        <uc1:FtBottom id="ftBottom" runat="server"></uc1:FtBottom>
+    </form>
+    <uc:ThirdLogoutControl id="thdLogout" runat="server"></uc:ThirdLogoutControl>
+
+    <div class="full-loading-container" style="display:block;">
+        <div class="loading">
+            <img src="/Image/xubox_loading2.gif" alt="loading" />
+            <div class="loading-label"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function PFullActionRequest(loadingLabel) {
+            $(".full-loading-container .loading-label").html(loadingLabel);
+            $(".full-loading-container").show();
+        }
+
+        function PFullActionRequestEnd() {
+            setTimeout(function () {
+                $(".full-loading-container").hide();
+            }, 500);
+        }
+
+        $(function () {
+            PFullActionRequestEnd();
+        });
+    </script>
+
+</body>
+</html>

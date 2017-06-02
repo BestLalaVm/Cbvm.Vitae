@@ -1,0 +1,154 @@
+﻿body{
+	background:rgb(240,240,240);
+}
+.qylbContent{
+	margin: auto;
+	width: 1000px;
+}
+.activity{
+	margin: auto;
+	width: 1000px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.qylbListTit{
+	float:left;
+	width:100%;
+	height:44px;
+	margin-bottom:20px;
+	border-bottom:1px dashed black;
+}
+.qylbTitName{
+	float:left;
+	height:44px;
+	padding-left:20px;
+	padding-right:20px;
+	line-height:44px;
+	font-weight: 400;
+	font-family:'微软雅黑 Regular', '微软雅黑';
+	font-style: normal;
+	font-size: 22px;
+	color: #666666;
+	border-bottom:2px solid rgb(240,143,21);
+}
+
+.qylbList{
+	float:left;
+	width:628px;
+	height:40px;
+	padding-left:20px;
+	margin-left:26px;
+	_margin-left:13px;
+	line-height:40px;
+}
+.qylbList a{
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;
+}
+.qylbListSty1{
+	background:rgb(242,242,242);
+}
+.content-left{
+	width: 290px;
+	float: left;
+}
+.stu-detail{
+	padding: 10px 20px 0;
+	background: #fff;
+	border: 1px rgb(204, 204, 204) solid;
+	margin-bottom: 10px;
+}
+.stu-detail img{
+	margin-right: 20px;
+	float: left;
+}
+.stu-detail h2, .stu-detail h3{
+	float: left;
+	width: 130px;
+}
+.stu-detail h2{
+	font-size: 28px;
+	height: 36px;
+	line-height: 36px;
+}
+.stu-detail h3{
+	color: #999;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+.stu-detail p.school{
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+.stu-detail ul li{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #666;
+}
+.stu-detail ul li label{
+	color: #333;
+	width: 80px;
+	display: inline-block;
+}
+.stu-detail h4{
+	height: 40px;
+	border-bottom: 1px rgb(204,204,204) dotted;
+}
+.stu-detail h4 span{
+	line-height: 38px;
+	padding: 0 20px;
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+}
+.style-1 h4 span{
+	background: rgb(232,108,130);
+}
+.style-2 h4 span{
+	background: rgb(112,183,254);
+}
+.stu-detail p{
+	padding-left: 5px;
+	font-size: 16px;
+	color: #666;
+	height: 40px;
+	line-height:40px;
+}
+.content-right{
+	float:right;
+	width:700px;
+	margin-bottom:10px;
+}
+.grxmLocal{
+	float:left;
+	width:680px;
+	height:44px;
+	line-height:44px;
+	background:white;
+	padding-left:20px;
+}
+.grxmLocal a{
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;
+}
+.grxmListContent{
+	float:left;
+	width:100%;
+	background:white;
+	margin-top:10px;
+}

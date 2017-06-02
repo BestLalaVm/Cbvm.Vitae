@@ -1,0 +1,51 @@
+﻿@import url("../BaseManage/StyleSheet.css");
+@import url("../BaseManage/ControlSkin.css");
+
+.body-content .main  table.wrap-container tr td.wrap-right .user-detail fieldset.course-list
+{
+   padding:0px;
+}
+.body-content .main  table.wrap-container tr td.wrap-right .user-detail fieldset.course-list .action
+{
+    border-top:1px solid #c1c1c1;
+    padding-bottom:3px;
+    margin-top:4px;
+}
+.body-content .main .wrap-right .user-left
+{
+    float:left;
+    	/*margin-right: 20px;*/
+}
+.body-content .main .wrap-right .user-right
+{
+    float:left;
+    position:relative;
+}
+.body-content .main .wrap-right .user-right.upload-image .image-container
+{
+    border:1px solid #ddd;
+    width:210px;
+    height:200px;
+    text-align:center;
+}
+.body-content .main .wrap-right .file-Upload input[type="file"]
+{
+    width:42px !important;
+    right:70px;
+}
+.body-content .main .wrap-right .user-detail td
+{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.body-content .main .wrap-right .user-detail th
+{
+    width:80px;
+}
+.body-content .main .wrap-right .user-detail td input[type='text']
+{
+    width:184px;
+}
+.body-content .main .wrap-container .wrap-right .detail .func-block .tab-block > table {
+    margin-left: 15px;
+}

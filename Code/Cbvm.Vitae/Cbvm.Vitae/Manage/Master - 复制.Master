@@ -1,0 +1,214 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Cbvm.Vitae.Manage.Master" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<%@ Register Src="~/Manage/UserControl/MenuNaviageControl.ascx" TagName="MenuNaviageControl"
+    TagPrefix="uc" %>
+<%@ Register Src="UserControl/Footer.ascx" TagName="footer" TagPrefix="uc" %>
+<%@ Register Src="UserControl/MenuControl.ascx" TagName="MenuControl" TagPrefix="uc" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%#Scripts.Render("~/Manage/BaseJs") %>
+    <%#Scripts.Render("~/Manage/Js") %>
+<%--    <%#Styles.Render("~/Manage/BaseCss") %>--%>
+    <style type="text/css">
+        .main table.main-content .nav-content .page {
+            overflow: auto;
+        }
+
+        .full-loading-container {
+            display: none;
+            position: fixed;
+            z-index: 999999999999999999999999;
+            width: 100%;
+            height: 100%;
+            background-color: whiteSmoke;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            opacity: 0.8;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+
+            .full-loading-container .loading {
+                margin-top: 210px;
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                text-align: center;
+                color: red;
+            }
+    </style>
+    <script type="text/javascript">
+        function ReflashFramePage() {
+            var frame = document.getElementById("frame");
+            frame.contentWindow.location.reload();
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="master xmca-toplevel">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManage" runat="server">
+            <Services>
+                <asp:ServiceReference Path="~/Ajax/AjaxService.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <telerik:RadAjaxLoadingPanel ID="ajaxLoadingPanel" runat="server">
+            <table style="width: 100%; height: 100%;">
+                <tr>
+                    <td style="width: 100%; height: 100%; vertical-align: middle; text-align: center;">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/loadingAnimation.gif" />
+                    </td>
+                </tr>
+            </table>
+        </telerik:RadAjaxLoadingPanel>
+        <telerik:RadAjaxManager ID="ajaxManage" runat="server">
+        </telerik:RadAjaxManager>
+        <div class="body-content">
+            <div class="xmca-topbar">
+                <div class="xmca-container">
+                    <div class="xmca-user">
+                        <asp:ContentPlaceHolder ID="contentUserInfo" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="xmca-menu">
+                        <ul>
+                            <li>
+                                <asp:HyperLink ID="link2Home" runat="server" Text="进入前台首页" NavigateUrl="~/Template/Default.aspx"></asp:HyperLink></span>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="linkLogout" runat="server" Text="注销" NavigateUrl="~/LogOffAccount.aspx"></asp:HyperLink>
+                            </li>
+                        </ul>
+                        <asp:ContentPlaceHolder ID="contentTopMenu" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <br class="clear" />
+                </div>
+            </div>
+            <div class="head">
+                <div class="menu">
+                    <uc:MenuControl id="MenuControl" runat="server"></uc:MenuControl>
+                </div>
+            </div>
+            <div class="main">
+                <div class="wrap-container">
+                    <div class="wrap-left widget">
+                        <div class="widget_top"></div>
+                        <div class="caption func-caption">
+                            <h1>功能应用</h1>
+                        </div>
+                        <uc:MenuNaviageControl ID="MenuNaviageControl" runat="server">
+                        </uc:MenuNaviageControl>
+                        <div class="widget_buttom"></div>
+                    </div>
+
+                    <div class="wrap-right widget">
+                        <div class="widget_top"></div>
+                        <iframe id="frame" src="<%=DefaultPage %>" width="100%" height="100%" scrolling="no"
+                            frameborder="0"></iframe>
+                        <div class="widget_buttom"></div>
+                    </div>
+                    <br class="clear" />
+                </div>
+            </div>
+            <div class="footer">
+                <uc:footer ID="ucFooter" runat="server"></uc:footer>
+            </div>
+        </div>
+    </form>
+    <div class="full-loading-container">
+        <div class="loading">
+            <img src="/Image/loading.gif" alt="loading" />
+            <div class="loading-label"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var FFextraHeight = 0;
+        function dynIframeSize(iframename,size) {
+
+            var pTar = null;
+            var h = 400; if (document.getElementById) {
+                             pTar = document.getElementById(iframename);
+                         }
+            else {
+                             eval('pTar = ' + iframename + ';');
+                         }
+            if (pTar) {
+                //begin resizing iframe   
+                pTar.style.display = "block"
+                //if (pTar.contentDocument && pTar.contentDocument.body && pTar.contentDocument.body.offsetHeight) {
+                //    //ns6 syntax
+                //    h = pTar.contentDocument.body.offsetHeight + FFextraHeight;
+                //}
+                //else if (pTar.Document && pTar.Document.body && pTar.Document.body.scrollHeight) {
+                //    //ie5+ syntax  
+                //    h = pTar.Document.body.scrollHeight + FFextraHeight;
+                //}
+
+                //if (size) {
+                //    if (size.height > 0) {
+                //        h = size.height;
+                //    }
+                //}
+
+                //if (h > 400) {
+                //    pTar.height = h + 1;
+                //}
+                //else {
+                //    pTar.height = 400;
+                //}
+                var height = $(pTar.contentDocument.body).height();
+                if (height > 400) {
+                    pTar.height = height + 2;
+                } else {
+                    pTar.height = 400;
+                }
+            }
+        }
+
+        /*End Iframe loading*/
+        function ResetSize(size) {
+            dynIframeSize("frame",size);
+        }
+
+        function beforeOpenPageEx(sender) {
+            BeginRequest();
+        }
+
+        function PActionRequest() {
+            $(".loading-container").show();
+        }
+
+        function PActionRequestEnd() {
+            $(".loading-container").hide();
+        }
+
+        function PFullActionRequest(loadingLabel) {
+            $(".full-loading-container .loading-label").html(loadingLabel);
+            $(".full-loading-container").show();
+        }
+
+        function PFullActionRequestEnd() {
+            setTimeout(function() {
+                $(".full-loading-container").hide();
+            }, 500);
+        }
+
+        function tb_removeEx() {
+            EndRequest();
+        }
+
+        (function () {
+            BeginRequest();
+        })();
+    </script>
+</body>
+</html>

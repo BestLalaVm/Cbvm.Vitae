@@ -1,0 +1,42 @@
+﻿@import url("../BaseManage/StyleSheet.css");
+
+@import url("../BaseManage/ControlSkin.css");
+
+.body-content .wrap-right .list .rgEditForm .data-detail {
+	width: 780px;
+	padding: 10px;
+}
+
+.body-content .wrap-right .list .rgEditForm .data-detail .helptip table {
+	width: 100%;
+}
+
+.body-content .wrap-right .list .rgEditForm .data-detail .helptip table tr td:nth-child(2n+1) {
+	text-align: right;
+}
+
+
+
+.body-content .main .upload-image .image-container {
+	border: 1px solid #ddd;
+	width: 210px;
+	height: 200px;
+	text-align: center;
+}
+
+.body-content .main .organization-code-image-file.upload-image .image-container,
+.body-content .main .licenseNo-image-file.upload-image .image-container  {
+    width:280px;
+    height:260px;
+}
+.body-content .main .organization-code-image-file.upload-image .image-container img,
+.body-content .main .licenseNo-image-file.upload-image .image-container img {
+    max-width:280px;
+    max-height:260px;
+}
+
+.body-content .main .organization-code-image-file.upload-image .file-Upload input[type="file"],
+.body-content .main .licenseNo-image-file.upload-image .file-Upload input[type="file"]{
+    right:130px;
+    height:27px;
+}

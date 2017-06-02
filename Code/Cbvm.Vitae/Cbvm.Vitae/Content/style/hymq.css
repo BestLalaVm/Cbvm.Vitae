@@ -1,0 +1,79 @@
+.qyContent{
+	margin:auto;
+	width:1000px;
+	height:950px;
+}
+.activity{
+	float:left;
+	width:1000px;
+	height:80px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.qyLinks{
+	float:left;
+	width:236px;
+	height:160px;
+	padding-top:10px;
+	margin-right:12px;
+	_margin-right:6px;
+	text-align:center;
+	margin-bottom:10px;
+	font-style: normal;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.qyLinks a{
+	line-height:30px;
+	color:#FFFFFF;
+	font-family: Regular;
+	font-weight: 400;
+}
+.LinksBack1{
+	background:#a6888a;
+}
+.LinksBack2{
+	background:#9c9d7d;
+}
+.LinksBack3{
+	background:#dec3a5;
+}
+.LinksBack4{
+	background:#beaea1;
+}
+.LinksBack5{
+	background:#2c3240;
+}
+.LinksBack6{
+	background:#dec3a5;
+}
+.LinksBack7{
+	background:#a6888a;
+}
+.LinksBack8{
+	background:#3f4845;
+}
+.LinksBack9{
+	background:#dec3a5;
+}
+.LinksBack10{
+	background:#9c9d7d;
+}
+.LinksBack11{
+	background:#2c3240;
+}
+.LinksBack12{
+	background:#beaea1;
+}
+.LinksBack13{
+	background:#beaea1;
+}
+.LinksBack14{
+	background:#dec3a5;
+}
+.LinksBack15{
+	background:#beaea1;
+}
+.LinksBack16{
+	background:#3f4845;
+}

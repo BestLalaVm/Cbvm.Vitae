@@ -1,0 +1,16 @@
+G:\项目\履历系统\XmutLuckV1\Presentation\bin\Release\Presentation.dll
+G:\项目\履历系统\XmutLuckV1\Presentation\bin\Release\Presentation.pdb
+G:\项目\履历系统\XmutLuckV1\Presentation\bin\Release\LkDataContext.dll
+G:\项目\履历系统\XmutLuckV1\Presentation\bin\Release\LkDataContext.pdb
+G:\项目\履历系统\XmutLuckV1\Presentation\obj\Release\Presentation.csprojResolveAssemblyReference.cache
+G:\项目\履历系统\XmutLuckV1\Presentation\obj\Release\Presentation.dll
+G:\项目\履历系统\XmutLuckV1\Presentation\obj\Release\Presentation.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\bin\Release\Presentation.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\bin\Release\Presentation.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\bin\Release\LkDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\bin\Release\LkDataContext.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\obj\Release\Presentation.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\obj\Release\Presentation.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\obj\Release\Presentation.csprojResolveAssemblyReference.cache
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\bin\Release\LkHelper.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\Presentation\bin\Release\LkHelper.pdb

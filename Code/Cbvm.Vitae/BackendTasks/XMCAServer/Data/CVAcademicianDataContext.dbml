@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CVAcademician" Class="CVAcademicianDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=Lucky-Pc;Initial Catalog=CVAcademician;Persist Security Info=True;User ID=sa" SettingsObjectName="XMCAServer.Properties.Settings" SettingsPropertyName="CVAcademicianConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SystemLog" Member="SystemLogs">
+    <Type Name="SystemLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(600) NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(2200) NOT NULL" CanBeNull="false" />
+      <Column Name="LogTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LogType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MailQueue" Member="MailQueues">
+    <Type Name="MailQueue">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsSended" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Sender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Receiver" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Cc" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="ReceiverName" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CdConfig" Member="CdConfigs">
+    <Type Name="CdConfig">
+      <Column Name="Code" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

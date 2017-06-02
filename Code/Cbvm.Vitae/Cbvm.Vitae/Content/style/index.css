@@ -1,0 +1,270 @@
+.headNav{
+	float:left;
+	width:90px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	color:white;
+	font-size:16px;
+	font-weight:bold;
+	cursor:pointer;
+}
+.indexContent{
+	margin:auto;
+	width:1000px;
+}
+.headNav:hover{
+	background:rgb(51,102,153);
+}
+.headNav a{
+	color:white;
+	font-weight:bold;
+}
+.sildImg{
+	width:100%;
+	height:370px;
+	overflow:hidden;
+}
+.login{
+	position:absolute;
+	top:100px;
+	left:900px;
+	width:360px;
+	height:300px;
+	background:url(../images/login.png);
+}
+.identity{
+	float:left;
+	width:90px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	color:white;
+	background:url(../images/login2.png);
+}
+.identity a{
+	color:white;
+	font-size:16px;
+	font-weight:bold;
+}
+.loginName{
+	float:left;
+	width:300px;
+	height:44px;
+	line-height:44px;
+	margin-top:20px;
+	margin-left:30px;
+	_margin-left:15px;
+}
+.loginName input{
+	width:90%;
+	height:100%;
+	padding-left:10%;
+	font-family:Regular;
+	font-weight: 400;
+	font-style: normal;
+	color: #666666;
+	text-align: left;
+	background:url(../images/loginInput.png) no-repeat;
+}
+.loginPassword{
+	float:left;
+	width:300px;
+	height:44px;
+	line-height:44px;
+	margin-top:16px;
+	margin-left:30px;
+	_margin-left:15px;
+}
+.loginPassword input{
+	width:90%;
+	height:100%;
+	padding-left:10%;
+	font-family:Regular;
+	font-weight: 400;
+	font-style: normal;
+	color: #666666;
+	text-align: left;
+	background:url(../images/loginInput.png) no-repeat;
+}
+.loginForget{
+	float:left;
+	width:330px;
+	height:18px;
+	margin-top:20px;
+	line-height:18px;
+	text-align:right;
+}
+.loginForget a{
+	font-family:  Regular;
+	font-weight: 400;
+	font-style: normal;
+	color: #F2F2F2;
+}
+.loginButton{
+	float:left;
+	width:200px;
+	height:50px;
+	margin-top:14px;
+	margin-left:80px;
+	_margin-left:40px;
+	background:rgb(224,46,77);
+	text-align:center;
+	line-height:50px;
+}
+.loginButton a{
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #F2F2F2;
+}
+.indexSearch{
+	float:left;
+	width:1000px;
+	margin-top:20px;
+	overflow:hidden;
+}
+.indexSearchText{
+	float:left;
+	width:850px;
+	height:50px;
+	padding-left:20px;
+	line-height:50px;
+	background:url(../images/indexSearchText.png) no-repeat;
+	font-size:20px;
+	color: #999999;
+	overflow:hidden;
+}
+.indexSearchButton{
+	float:left;
+	width:130px;
+	height:50px;
+	line-height:50px;
+	padding-left:30px;
+	font-size:24px;
+	color:white;
+	background:url(../images/indexSearchButton.png) no-repeat;
+	cursor:pointer;
+}
+.indexContentTitle{
+	float:left;
+	width:984px;
+	height:30px;
+	padding-left:16px;
+	margin-top:34px;
+	line-height:30px;
+	font-size: 20px;
+	background:url(../images/indexContentTitle.png) no-repeat;
+}
+.indexJobInfo{
+	width:480px;
+	height:260px;
+	margin-top:30px;
+}
+.indexJobInfoTitle{
+	float:left;
+	width:460px;
+	height:40px;
+	padding-left:10px;
+	padding-right:10px;
+	line-height:40px;
+	background:rgb(228,228,228);
+}
+.indexJobInfoTitle div{
+	float:left;
+	color:#333333;
+	font-size:16px;
+	font-weight: 700;
+}
+.indexJobInfoTitle a{
+	float:right;
+	font-weight: 400;
+	font-style: normal;
+	color: #666666
+}
+.indexJobInfoContent{
+	float:left;
+	width:100%;
+	height:	200px;
+	overflow:hidden;
+	background:rgb(250,250,250);
+}
+.indexJobInfoLine{
+	float:left;
+	width:400px;
+	height:40px;
+	overflow:hidden;
+	line-height:40px;
+	margin-left:40px;
+	_margin-left:20px;
+}
+.indexJobInfoLineLocal{
+	float:left;
+	width:110px;
+	height:40px;
+	overflow:hidden;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;
+}
+.indexJobInfoLineJob{
+	float:left;
+	width:230px;
+	height:40px;
+	overflow:hidden;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #999999;
+}
+.indexJobInfoLinePay{
+	float:left;
+	width:60px;
+	height:40px;
+	overflow:hidden;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;	
+}
+.indexJobInfo2{
+	float:left;
+	width:230px;
+	height:200px;
+	margin-top:20px;
+	margin-left:20px;
+	_margin-left:10px;
+}
+.indexJobInfo2Content{
+	float:left;
+	width:100%;
+	height:80px;
+	background:rgb(228,228,228);
+}
+.indexJobInfo2Job{
+	float:left;
+	width:110px;
+	height:20px;
+	overflow:hidden;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	color: #127E87;
+	margin-left:20px;
+	_margin-left:10px;
+	margin-top:16px;
+}
+.indexJobInfo2Local{
+	float:left;
+	width:40px;
+	height:20px;
+	overflow:hidden;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	color: #797979;
+	margin-left:20px;
+	_margin-left:10px;
+	margin-top:16px;
+}

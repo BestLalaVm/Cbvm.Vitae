@@ -1,0 +1,259 @@
+/* clearfix用于父容器直接清除子元素浮动 */
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+	/* IE < 8 */
+}
+.wrap-container {
+	padding-bottom: 30px;
+	width: 100%;
+}
+.container {
+	width: 1305px;
+	margin: auto;
+}
+.stu-center {
+	width: 1120px;
+	float: right;
+}
+.breadcrumbs {
+	height: 40px;
+	width: 1115px;
+	line-height: 40px;
+	background: rgb(245, 245, 245);
+	border-right: 1px rgb(215, 215, 215) solid;
+	border-bottom: 1px rgb(215, 215, 215) solid;
+	font-size: 16px;
+	color: #438EB9;
+	padding-left: 15px;
+}
+.stu-info {
+	padding: 10px 40px 0;
+}
+.stu-info h1 {
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	border-bottom: 1px rgb(215, 215, 215) dotted;
+	font-size: 32px;
+	color: #6379C5;
+}
+.stu-info ul li {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.stu-info ul li label {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+	text-align: right;
+	font-size: 20px;
+	color: #666;
+	line-height: 30px;
+}
+.stu-info ul li span {
+	float: left;
+	padding: 0 10px;
+	text-align: right;
+	font-size: 20px;
+	color: #666;
+	line-height: 30px;
+}
+.stu-info ul li input {
+	float: left;
+	border: 1px rgb(215, 215, 215) solid;
+	height: 30px;
+	padding-left: 20px;
+	width: 320px;
+}
+.query {
+	padding: 10px 30px;
+	background: rgb(245, 245, 245);
+	margin-top: 20px;
+}
+.query li {
+	float: left;
+}
+.query li input.keyword {
+	width: 825px;
+}
+.query li .search {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+	float: left;
+	background: rgb(102, 153, 225);
+	margin-top: -5px;
+	margin-left: 3px;
+	padding: 0;
+}
+.operation {
+	width: 100%;
+	padding: 20px 0;
+	float: left;
+}
+.operation .add {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	font-size: 20px;
+	color: #FFFFFF;
+	float: left;
+	background: rgb(102, 153, 225);
+	text-align: center;
+}
+.stu-info .list {
+	width: 100%;
+	float: left;
+}
+/* 学生后台列表 */
+
+.stu-login {
+	padding: 10px 0 30px;
+	background: rgb(240,240,240);
+}
+.stu-login .container {
+	width: 1000px;
+	padding: 0 150px;
+}
+.activity {
+	width: 100%;
+}
+.content-left {
+	width: 700px;
+	float: left;
+}
+.content-list {
+	padding: 20px;
+	border: 1px rgb(204, 204, 204) solid;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.content-list h2 {
+	height: 40px;
+	line-height: 40px;
+	width: 650px;
+	border-bottom: 1px rgb(204, 204, 204) dotted;
+	font-size: 22px;
+	color: #666;
+	position: relative;
+	padding-left: 5px;
+	float: left;
+	margin-bottom: 10px;
+}
+.content-list h2 s {
+	position: absolute;
+	width: 150px;
+	height: 3px;
+	bottom: -3px;
+	left: 0;
+}
+.list-1 h2 s{
+	background: rgb(240, 143, 21);
+}
+.list-2 h2 s{
+	background: rgb(0, 153, 102);
+}
+.content-list ul{
+	padding-left: 20px;
+}
+.content-list ul li{
+	float: left;
+	width: 33.3%;
+	height: 40px;
+	line-height: 40px;
+}
+.content-list p{
+	line-height: 40px;
+	padding: 0 20px;
+}
+.content-right{
+	width: 290px;
+	float: right;
+}
+.stu-detail{
+	padding: 10px 20px 0;
+	background: #fff;
+	border: 1px rgb(204, 204, 204) solid;
+	margin-bottom: 10px;
+}
+.stu-detail img{
+	margin-right: 20px;
+	float: left;
+}
+.stu-detail h2, .stu-detail h3{
+	float: left;
+	width: 130px;
+}
+.stu-detail h2{
+	font-size: 28px;
+	height: 36px;
+	line-height: 36px;
+}
+.stu-detail h3{
+	color: #999;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+.stu-detail p.school{
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+.stu-detail ul li{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #666;
+}
+.stu-detail ul li label{
+	color: #333;
+	width: 80px;
+	display: inline-block;
+}
+.stu-detail h4{
+	height: 40px;
+	border-bottom: 1px rgb(204,204,204) dotted;
+}
+.stu-detail h4 span{
+	line-height: 38px;
+	padding: 0 20px;
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+}
+.style-1 h4 span{
+	background: rgb(232,108,130);
+}
+.style-2 h4 span{
+	background: rgb(112,183,254);
+}
+.stu-detail p{
+	padding-left: 5px;
+	font-size: 16px;
+	color: #666;
+	height: 40px;
+	line-height:40px;
+}

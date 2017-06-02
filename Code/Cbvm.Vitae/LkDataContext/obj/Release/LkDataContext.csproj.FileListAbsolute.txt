@@ -1,0 +1,10 @@
+G:\项目\履历系统\XmutLuckV1\LkDataContext\bin\Release\LkDataContext.dll.config
+G:\项目\履历系统\XmutLuckV1\LkDataContext\bin\Release\LkDataContext.dll
+G:\项目\履历系统\XmutLuckV1\LkDataContext\bin\Release\LkDataContext.pdb
+G:\项目\履历系统\XmutLuckV1\LkDataContext\obj\Release\LkDataContext.dll
+G:\项目\履历系统\XmutLuckV1\LkDataContext\obj\Release\LkDataContext.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\LkDataContext\bin\Release\LkDataContext.dll.config
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\LkDataContext\bin\Release\LkDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\LkDataContext\bin\Release\LkDataContext.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\LkDataContext\obj\Release\LkDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\LkDataContext\obj\Release\LkDataContext.pdb

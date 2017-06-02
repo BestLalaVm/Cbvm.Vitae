@@ -1,0 +1,174 @@
+
+.content{
+	width:100%;
+	padding-top:40px;
+	padding-bottom:60px;
+	background:#f2f2f2;
+}
+.cpsyContent{
+	width:100%;
+	height:650px;
+	overflow:hidden;
+	padding-top:40px;
+	background:#f2f2f2;
+}
+.cpdfContentText{
+	margin:auto;
+	width:596px;
+	height:476px;
+	border:2px solid #c51f3c;
+	background:white;
+}
+.grade{
+	position:relative;
+	width:340px;
+	height:122px;
+	top:-29px;
+	left:130px;
+	text-align:center;
+	line-height:122px;
+	font-size:55px;
+	font-weight:bold;
+	background:url(../images/grade.jpg) no-repeat;
+	background-size:cover;
+}
+.cpdfContentText p{
+	width:500px;
+	height:330px;
+	margin:auto;
+	font-size: 20px;
+	font-family: 'Arial Normal', 'Arial';
+	font-weight: 400;
+	overflow:hidden;
+}
+.backButton{
+	width:200px;
+	height:66px;
+	position:relative;
+	left:200px;
+	top:0px;
+	background:#c51f3c;
+	color:white;
+	font-size:28px;
+	line-height:66px;
+	text-align:center;
+}
+.backButton a{
+	color:white;
+	font-size:28px;
+	line-height:66px;
+	text-align:center;
+}
+.cpContentText{
+	margin:auto;
+	width:600px;
+	height:490px;
+	padding-left:52px;
+	padding-right:52px;
+	background:url(../images/cpContentBack.png) no-repeat;
+}
+.cpContentText p{
+	width:500px;
+	height:300px;
+	margin:auto;
+	font-size: 20px;
+	font-family: 'Arial Normal', 'Arial';
+	font-weight: 400;
+	overflow:hidden;
+}
+.cpTextTitlePrve{
+	float:left;
+	width:520px;
+	height:60px;
+	padding-right:80px;
+	text-align:center;
+	line-height:60px;
+	font-size:24px;
+	font-weight:bold;
+	color:white;
+	margin-bottom:20px;
+}
+.cpTextTitlePrve a{
+	float:left;
+}
+.cpTextTitleNext{
+	float:left;
+	width:520px;
+	height:60px;
+	padding-left:80px;
+	text-align:center;
+	line-height:60px;
+	font-size:24px;
+	font-weight:bold;
+	color:white;
+	margin-bottom:20px;
+}
+.cpTextTitleNext a{
+	float:right;
+}
+.cpContentButton{
+	margin:auto;
+	width:200px;
+	height:50px;
+	background:#c51f3c;
+	text-align:center;
+}
+.cpContentButton a{
+	color:white;
+	line-height:50px;
+	font-size:28px;
+}
+.contentImgNav{
+	margin:auto;
+	width:1000px;
+	height:640px;
+} 
+.cpsyNavWord{
+	position:relative;
+	width:40px;
+	height:400px;
+	color: #CCCCCC;
+	font-family: 'Arial Negreta', 'Arial';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 32px;
+	text-align:right;
+	line-height:44px;
+}
+.cpsyNavWordPos1{
+	top:-620px;
+	left:140px;
+}
+.cpsyNavWordPos2{
+	top:-1020px;
+	left:340px;
+}
+.cpsyNavWordPos3{
+	top:-1420px;
+	left:540px;
+}
+.cpsyNavWordPos4{
+	top:-1820px;
+	left:740px;
+}
+.cpsyNavWordPos5{
+	top:-2220px;
+	left:940px;
+}	
+.detailNav{
+	float:left;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+	cursor: pointer;
+}
+.detailNav a{
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+}
+.detailNav:hover{background:#3e4a51;}

@@ -1,0 +1,640 @@
+﻿body {
+    font-family: 微软雅黑 !important;
+    color: #000;
+}
+body.master {
+    margin: 0px;
+}
+body .body-content .account {
+    float: right;
+    position: relative;
+    left: -220px;
+    top: -60px;
+    background-color: #DFDFDF;
+    padding: 5px;
+    font-size: 12px;
+}
+body .body-content .main .wrap-container .func-caption {
+    background: url("img/func-group.png") no-repeat;
+}
+body .body-content .main .wrap-container .caption {
+    border-bottom: 1.5px dashed rgb(167, 167, 167);
+    padding-bottom: 10px;
+}
+
+body .body-content .main .wrap-container .caption h1 {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+body .body-content .head .logo {
+    background: url("../../Image/Logo.png") no-repeat;
+    height: 60px;
+    position: relative;
+    left: 160px;
+    top: 40px;
+    width: 600px;
+}
+
+body .body-content .head .manage-level {
+    float: right;
+    left: -50px;
+    top: 50px;
+    position: relative;
+}
+
+body .body-content .xmca-topbar {
+    background-color: whiteSmoke;
+    padding: 5px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+body .body-content .xmca-topbar a, .head a {
+    text-decoration: none;
+    color: #000;
+}
+body .body-content .xmca-topbar .xmca-container {
+    margin: 0px auto;
+    width: 980px;
+    font-size: 12px;
+}
+
+body .body-content .xmca-topbar .xmca-container .xmca-user {
+    float: left;
+}
+
+body .body-content .xmca-topbar .xmca-container .xmca-menu {
+    float: right;
+}
+
+.body-content a {
+    text-decoration: none;
+}
+
+.body-content a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.body-content .main .wrap-right .detail {
+    padding-bottom: 20px;
+}
+
+.body-content .main .wrap-right .detail .rtsFirst .rtsLink {
+    border-top-left-radius: 15px;
+}
+
+.body-content .main .wrap-right .detail .action {
+    margin-bottom: 10px;
+}
+
+.body-content .main .wrap-right .detail .editor-description {
+    border: 1px solid #c1c1c1;
+    padding: 2px;
+}
+
+.body-content .main .wrap-container .wrap-left {
+    border: 1px solid #c1c1c1;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    min-height: 420px;
+}
+
+.body-content .main .wrap-container .wrap-left .main-menu {
+    margin-top: 30px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.body-content .main > .wrap-container .wrap-right .caption {
+    background-color: rgb(249, 243, 243);
+    border-bottom: 1px solid #DDD;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.body-content .main > .wrap-container .wrap-right .user-info .block.persional .caption {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.body-content .main > .wrap-container .wrap-right .container {
+    padding: 10px;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .password-block {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px solid rgb(252, 231, 230);*/
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: 20px;
+}
+
+
+.body-content .main .wrap-container .wrap-right .detail .password-block .container {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.body-content .main .wrap-container .wrap-right .detail .password-block .container > div {
+    width: 226px;
+    margin: auto;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .password-block .container  div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.body-content .main .wrap-container .wrap-right .user-image .image-container {
+    width: 210px;
+    height: 200px;
+    background-color: #EFEFEF;
+    padding: 5px;
+}
+
+.body-content .main .wrap-container .wrap-right .block fieldset {
+    margin-top: 10px;
+}
+
+.body-content .main .wrap-container .wrap-right .left {
+    float: left;
+    margin: 5px;
+}
+
+.body-content .main .wrap-container .wrap-right .right {
+    float: right;
+    margin: 5px;
+}
+
+.body-content .main .wrap-container .wrap-right .clear {
+    clear: both;
+}
+
+.body-content .main .wrap-container .description {
+    border: 1px solid #c1c1c1;
+    min-height: 90px;
+    max-width: 700px;
+    padding: 4px 2px;
+}
+
+.body-content .head {
+    height: 145px;
+    background-image: url("img/head-new.png");
+}
+
+.body-content .footer {
+    background-color: rgb(242, 222, 221);
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(139,127,133);
+    line-height: 16px;
+}
+
+.body-content .main table th {
+    text-align: right;
+    font-weight: normal;
+}
+
+.body-content .main table th.multiLine {
+    vertical-align: top;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .func-block .tab-block .container > table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .func-block .tab-block .container > table th {
+    width: 90px;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .func-block .tab-block {
+    border-top: 1px solid #c1c1c1;
+    padding: 10px 0px;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .func-block .tab-block.attachment-block {
+    padding: 10px 0px;
+}
+
+.body-content .main .picker-item {
+    float: left;
+}
+
+.body-content .main .picker-label {
+    width: 20px;
+    padding: 0px 5px;
+    line-height: 25px;
+}
+
+/*upload file*/
+.body-content .main .wrap-container .wrap-right .action .file-Upload {
+    text-align: left;
+}
+
+.fileLabel-Upload .file-Upload {
+    display: block;
+}
+
+.fileLabel-Upload .file-Upload input[type='submit'] {
+    margin-left: 2px;
+
+}
+
+.file-Upload {
+    position: relative;
+    margin-top: 5px;
+}
+.file-Upload input[type="submit"] {
+    width:42px !important;
+}
+.file-Upload input[type="file"] {
+    z-index: 10;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    right: 48px;
+    width: 170px;
+}
+
+.file-Upload input[type="text"] {
+    float: left;
+    width: 140px;
+}
+
+/*.file-Upload input[type='submit'][id$='btnUpload'] {
+    margin-left: -8px;
+}*/
+
+.fileLabel-Upload .file-Upload input[type="file"] {
+    right: 0px;
+}
+
+.body-content .main .wrap-right .fileLabel-Upload .file-Upload input[type="file"] {
+    right: 30px;
+    width: 59px;
+}
+/*end file upload*/
+
+.main .wrap-container .button {
+    background: url("img/btn_bg.png") no-repeat;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    width: 90px;
+    margin-left: 8px;
+    margin-top: 2px;
+    font-size: 14px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.main .wrap-container .button:hover {
+    background: url("img/btn_bg_hover.png") no-repeat;
+}
+
+.body-content .main .wrap-container .condition fieldset {
+    padding: 10px;
+}
+/*begin menu*/
+.main-menu .navigate-container a {
+    background: url("img/menuItemex.png") repeat-x;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-menu .navigate-container a:hover {
+    text-decoration: underline;
+    background: url("img/menuItem.jpg") repeat-x;
+    border: 2px solid #ddd;
+}
+.main-menu .navigate-container a.selected {
+    background: none;
+    background: url("img/menuItem.jpg") repeat-x;
+    border: 2px solid #ddd;
+}
+
+.main-menu .navigate-container .sub-container a {
+    padding-left: 30px;
+}
+/*end menu*/
+.body-content .main .wrap-container .wrap-right .user-info table th {
+    width: 100px;
+}
+
+.body-content .main .wrap-container .wrap-right .action {
+    text-align: right;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .action {
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.body-content .main .wrap-container .wrap-right .user-info .action {
+    padding-right: 65px;
+}
+
+.body-content .main .wrap-container .wrap-right .condition .container {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.body-content .main .wrap-container .wrap-right .detail .fileLabel-Upload table {
+    width: auto;
+}
+
+.body-content .main .wrap-container .wrap-right table.grade-container {
+    width: 470px;
+}
+/*Comment list*/
+.body-content .comment .comment-list {
+    margin-bottom: 10px;
+}
+
+.body-content .comment .comment-list .caption {
+    border-bottom: 2px solid black;
+}
+
+.body-content .comment .comment-list .empty-list {
+    border-top: 1px solid #C1C1C1;
+    padding-top: 10px;
+    padding-left:10px;
+}
+
+.body-content .comment .comment-list > table {
+    margin-top: 10px;
+    border: 1px solid #DDD;
+    border-collapse: collapse;
+}
+
+.body-content .comment .comment-list > table td:first-child {
+    background-color: #F3F3F3;
+    padding-left: 10px;
+    width: 120px;
+}
+
+.body-content .comment .comment-list > table td {
+    vertical-align: text-top;
+}
+
+.body-content .comment .comment-list > table td .comment-container {
+    width: 780px;
+}
+
+.body-content .comment .comment-list > table td .comment-container .comment-head {
+    border-bottom: 1px dashed #DDD;
+    padding: 10px;
+    background-color: #F3F3F3;
+}
+
+.body-content .comment .comment-list > table td .comment-container .comment-content {
+    padding: 10px;
+}
+
+.body-content .main .error .msg-ico {
+    background: url("img/msg.png") no-repeat;
+    display: inline-block;
+    width: 20px;
+    /*float: left;*/
+    height: 16px;
+    margin-left: 5px;
+}
+
+.body-content .main .error label {
+    display: inline;
+    /*float: left;*/
+    line-height: 20px;
+}
+
+.body-content .widget {
+    background-color: #fff;
+}
+
+.body-content .main .wrap-container .wrap-right .rgEditForm .action {
+    margin-right: 30px;
+}
+
+.body-content .wrap-right .list .rgEditForm .data-detail {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.body-content .wrap-right .list .rgEditForm .data-detail .caption {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.body-content .wrap-right .list .rgEditForm .data-detail .container {
+    padding: 10px;
+}
+
+.body-content .main .error {
+    color: Red;
+}
+
+.data-detail label {
+    line-height: 12px;
+}
+
+.head .menu {
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 30px;
+}
+
+input[type='submit'], input[type='button'] {
+    width: 60px;
+    height: 30px;
+    /*margin-right: 6px;*/
+    cursor: pointer;
+}
+
+ul {
+    margin: 2px;
+    padding: 0px;    
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+#divMessage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    color: Red;
+}
+
+.Invalid-Value {
+    color: red;
+}
+
+.icons.icon_down {
+    background-image: url("img/down.gif");
+    width: 14px;
+    height: 18px;
+    display: inline-block;
+}
+
+.icons.icon_up {
+    background-image: url("img/up.gif");
+    width: 14px;
+    height: 18px;
+    display: inline-block;
+}
+.clear {
+    clear: both;
+}
+
+label {
+    line-height: 20px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.required {
+    color: Red;
+}
+
+/*begin lk-dialog*/
+.lk-dialog {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    min-width: 440px;
+    background-color: #eaeaea;
+}
+.lk-dialog .lk-main {
+    overflow: hidden;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #eaeaea;
+}
+.lk-dialog .dialog-head {
+    background-color: #eaeaea;
+    padding: 5px 15px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #ccc;
+    cursor: move;
+}
+.lk-dialog .dialog-head .dialog-close {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    background: url("img/lk-basic-ico.png") no-repeat -18px -240px;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    display: block;
+    cursor: pointer;
+}
+.lk-dialog .dialog-head .dialog-close:hover {
+    background-position: -54px -240px;
+}
+.lk-dialog .dialog-container {
+    width: 800px;
+    height: 400px;
+}
+.lk-dialog .dialog-action {
+    background-color: #eaeaea;
+    padding: 5px 12px;
+    text-align: right;
+    line-height: 25px;
+    border-top: 1px solid #ccc;
+}
+.lk-dialog .lk-dialog-flash.dialog-head {
+    background-color: #fff;
+}
+/*end lk-dialog*/
+
+h3,h4 {
+    margin: 0px;
+}
+
+/*2015-03-31*/
+.body-content .main > .wrap-container .wrap-right .caption {
+    border-top-right-radius:0px;
+    border-top-left-radius:0px;
+}
+.RadGrid_Default {
+    border:1px solid rgb(245, 245, 245) !important;
+}
+.hide {
+    display:none;
+}
+.menu ul > li {
+    background-color:#fff;
+}
+.menu ul.newMenu-container > li > a.head {
+    background-color:rgb(245, 245, 245);
+}
+ .menu ul  li a.head {
+    border-bottom-width:0px !important;
+    float:none;
+    width:100%;
+    display:block;
+    padding-left:0px;
+}
+.menu ul li a.head span {
+    padding-left:15px;
+}
+.menu ul li a.head span.nav-flag.show+span.text {
+    padding-left:5px;
+}
+ .menu ul  li a.head + .sub-container{
+    /*border-top:1px rgb(215, 215, 215) solid;*/
+    background-color:#fff;
+}
+ .menu ul  li a.head + .sub-container li:first-child {
+    border-top:0px !important;
+}
+.menu ul li a.head + .sub-container li:first-child a.head {
+    border-top-width:0px;
+}
+.menu ul li a.head + .sub-container .head {
+    border-top-width:0px;
+}
+
+.menu ul li.active > a.head {
+    color:#fff !important;
+    background-color:#2B7DBC;
+}
+
+.menu ul li > a.head:hover {
+     background-color:#438EB9;
+     color:#fff !important;
+}
+input[readonly], input[disabled],select[disabled] {
+    background-color: #F3F3F3;
+}
+.body-content .main .wrap-container .wrap-right .action {
+    text-align:center !important;
+}

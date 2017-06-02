@@ -1,0 +1,238 @@
+﻿/* clearfix用于父容器直接清除子元素浮动 */
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+	/* IE < 8 */
+}
+.wrap-container {
+	padding: 10px 0 30px;
+	width: 100%;
+}
+.container {
+	/*width: 1000px;*/
+    	width: 1130px;
+	padding: 0 150px;
+	margin: auto;
+}
+/*.activity {
+	width: 100%;
+}*/
+.query {
+	padding: 10px 0 20px 30px;
+	/*width: 970px;*/
+	height:150px;
+	background: rgb(240, 240, 240);
+}
+.query ul li ,
+.query ul li label,
+.query ul li input,
+.query ul li dl {
+	float: left;
+}
+.query ul li{
+	margin-bottom: 10px;
+}
+.query ul li label{
+	font-size: 14px;
+	margin-right: 5px;
+	line-height: 30px;
+	width: 80px;
+	text-align: right;
+}
+.query ul li input{
+	height: 30px;
+	padding-left: 5px;
+	border: 1px #999 solid;
+	width: 332px;
+}
+.query ul li dl{
+	width: 75px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 14px;
+	background: #fff;
+	border: 1px #999 solid;
+	border-right: 0;
+}
+.query ul li.keyword input{
+	width: 645px;
+}
+.xszzwSearchButton{
+	float:left;
+	width:90px;
+	height:40px;
+	margin-left:405px;
+	_margin-left:202px;
+}
+.xszzwSearchClear{
+	float:left;
+	margin-left:20px;
+	_margin-left:10px;
+	width:100px;
+	height:40px;
+	line-height:40px;
+}
+.xszzwSearchClear a{
+	color:#0060a4;
+}
+.searchNotic{
+	float:left;
+	width:850px;
+	height:30px;
+	color:#979797;
+	margin-left:40px;
+	_margin-left:20px;
+}
+.contentLeft{
+	margin-top:20px;
+	float:left;
+	width:250px;
+	border:1px solid rgb(240,240,240);
+}
+.contentRight{
+	margin-top:20px;
+	float:right;
+	width:865px;
+	padding-bottom:20px;
+	border:1px solid rgb(240,240,240);
+}
+.clickRankTit{
+	float:left;
+	width:95%;
+	height:50px;
+	padding-left:5%;
+	background:rgb(240,240,240);
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #666666;
+	line-height:50px;
+	margin-bottom:10px;
+}
+.clickRankTit a{
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #666666;
+}
+.clickRankContent{
+	float:left;
+	_margin-left:5px;
+	_margin-right:5px;
+	margin:10px;
+	width:208px;
+	height:60px;
+	border:1px solid rgb(240,240,240);
+	padding:10px;
+}
+.clickRankImg{
+	float:left;
+	width:60px;
+	height:60px;
+}
+.clickRankImg img{
+	width:60px;
+	height:60px;
+}
+.clickRankWord{
+	float:left;
+	width:90px;
+	height:60px;
+	line-height:30px;
+	margin-left:6px;
+	_margin-left:3px;
+}
+.clickRankWord a{
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #999999;
+}
+.clickRankNum{
+	float:left;
+	width:50px;
+	height:60px;
+	line-height:30px;
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;
+	text-align:center;
+}
+.clickNumPStyle{
+	font-size: 18px;
+	color: #F28F18;
+	font-family: 'Arial Negreta', 'Arial';
+	font-weight: 700;
+	font-style: normal;
+}
+.zxsDetailInfo{
+	float:left;
+	/*width:330px;*/
+    	width:400px;
+	height:198px;
+	margin-top:20px;
+	margin-left:20px;
+	_margin-left:10px;
+	border:1px solid rgb(240,240,240);
+}
+.zxsDetailLeft{
+	float:left;
+	width:80px;
+	height:150px;
+	margin-left:16px;
+	_margin-left:8px;
+	margin-top:30px;
+	text-align:center;
+}
+.zxsDetailImg img{
+	width:80px;
+	height:80px;
+}
+.zxsDetailP{
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #666666;
+	line-height:30px;
+}
+.zxsDetailNumPStyle{
+	line-height:30px;
+	color: #F28F18;
+	font-family: 'Arial Negreta', 'Arial';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 24px;
+}
+.zxsDetailRight{
+	float:left;
+	width:280px;
+	height:150px;
+	margin-left:20px;
+	_margin-left:10px;
+	margin-top:20px;
+	font-family: '微软雅黑 Regular', '微软雅黑';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;
+	line-height: 32px;
+}
+.zxsDetailRight a{
+	color:#999999;
+}

@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Cbvm.Vitae.Template.StudentTemplate.Master" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/Template/UserControl/MenuControl.ascx" TagName="MenuControl"
+    TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="~/Template/StudentTemplate/UserControl/UserInfo.ascx" TagName="UserInfo"
+    TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/UserStatusControl.ascx" TagName="UserStatusControl"
+    TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/StudentSearchWidget.ascx" TagName="StudentSearchWidget"
+    TagPrefix="uc" %>
+<%@ Register Src="~/Template/StudentTemplate/UserControl/VisitStudentWidget.ascx" TagName="VisitStudentWidget" TagPrefix="uc" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/Scripts/jqwidgets/jqwidgets/styles/jqx.base.css" />
+    <%#Scripts.Render("~/Manage/BaseJs") %>
+    <%#Scripts.Render("~/Manage/Js") %>
+    <script type="text/javascript">
+        $(function () {
+            $(".widget-list .bar").click(function () {
+                var collapseClass = "collapse";
+                var expandClass = "expand";
+                var next = $(this).next(".container");
+                if (next.is(":hidden")) {
+                    next.slideDown();
+                    $(this).removeClass(collapseClass).addClass(expandClass);
+                } else {
+                    next.slideUp();
+                    $(this).removeClass(expandClass).addClass(collapseClass);
+                }
+            });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManage" runat="server">
+        </asp:ScriptManager>
+        <div class="main">
+            <uc:userstatuscontrol id="userControl" runat="server"></uc:userstatuscontrol>
+            <div class="head">
+                <uc:studentsearchwidget id="StudentSearchWidget" runat="server">
+                </uc:studentsearchwidget>
+                <div class="menu">
+                    <uc:menucontrol id="MenuControl" runat="server">
+                    </uc:menucontrol>
+                </div>
+            </div>
+            <div class="body">
+                <div class="left">
+                    <uc:userinfo id="stdUserInfo" runat="server">
+                    </uc:userinfo>
+                    <uc:visitstudentwidget id="vstStudentList" runat="server"></uc:visitstudentwidget>
+                    <asp:ContentPlaceHolder ID="contentLeftContainer" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="right">
+                    <asp:ContentPlaceHolder ID="contentMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="footer">
+                <uc:footer id="footer" runat="server">
+                </uc:footer>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

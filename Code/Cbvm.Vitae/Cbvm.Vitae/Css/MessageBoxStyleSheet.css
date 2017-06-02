@@ -1,0 +1,115 @@
+﻿.messagebox-list {
+    height: 800px;
+    overflow: auto;
+}
+
+    .messagebox-list > .messagebox-Item {
+        border-bottom: 1px solid #ddd;
+        min-height: 200px;
+        vert-align: top;
+    }
+
+    .messagebox-list .messagebox-Item .messagebox-vistor {
+        float: left;
+        /*border-right: 1px solid #ddd;*/
+        /*background-color: whitesmoke;*/
+        min-height: 120px;
+        width: 60px;
+        vert-align: middle;
+        text-align: center;
+    }
+
+        .messagebox-list .messagebox-Item .messagebox-vistor .vistor-photo img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+    .messagebox-list .messagebox-Item .messagebox-block {
+        float: left;
+        width: 720px;
+        padding: 2px 10px;
+    }
+
+        .messagebox-list .messagebox-Item .messagebox-block .messagebox-caption {
+            border-bottom: 1px dotted #ccc;
+            padding: 5px 10px;
+        }
+
+        .messagebox-list .messagebox-Item .messagebox-block .messagebox-content {
+            padding: 5px 10px;
+            min-height: 30px;
+            word-wrap: break-word;
+            word-spacing: normal;
+            white-space: normal;
+        }
+
+        .messagebox-list .messagebox-Item .messagebox-block .messagebox-action {
+            padding: 5px 10px;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .messagebox-list .messagebox-Item .messagebox-block .messagebox-time {
+            float: right;
+            margin-right: 2px;
+        }
+
+        .messagebox-list .messagebox-Item .messagebox-block .messagebox-itemList .messagebox-Item {
+            margin-bottom: 10px;
+            background-color: beige;
+            padding-top: 10px;
+        }
+
+            .messagebox-list .messagebox-Item .messagebox-block .messagebox-itemList .messagebox-Item .messagebox-block {
+                width: 700px !important;
+            }
+
+        .messagebox-list .messagebox-Item .messagebox-block .message-replyList {
+            padding-left: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+            .messagebox-list .messagebox-Item .messagebox-block .message-replyList .messagebox-replyItem:first-child {
+                padding-top: 10px;
+            }
+
+            .messagebox-list .messagebox-Item .messagebox-block .message-replyList .messagebox-replycontent {
+                padding: 10px 10px 10px 40px;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 10px;
+                word-wrap: break-word;
+                word-spacing: normal;
+                white-space: normal;
+            }
+
+            .messagebox-list .messagebox-Item .messagebox-block .message-replyList .messagebox-vistor {
+                min-height: 50px;
+            }
+
+            .messagebox-list .messagebox-Item .messagebox-block .message-replyList .messagebox-block {
+                width: 660px !important;
+            }
+
+        .messagebox-list .messagebox-Item .messagebox-block .messagebox-itemList .messagebox-Item .messagebox-block .message-replyList .messagebox-block {
+            width: 600px !important;
+        }
+
+.loading-container {
+    width: 210px;
+    position: fixed;
+    top: 200px;
+    left: 350px;
+}
+
+.message-expColContainer {
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.collapse {
+    display: none;
+}
+
+.expand {
+    display: block;
+}

@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SubMaster.master.cs"
+    Inherits="Cbvm.Vitae.Manage.SubMaster" %>
+<%@ Register Src="~/UserControl/ThirdLogoutControl.ascx" TagName="ThirdLogoutControl" TagPrefix="uc" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/Scripts/jqwidgets/jqwidgets/styles/jqx.base.css" />
+    <%#Scripts.Render("~/Manage/BaseJs") %>
+    <%#Scripts.Render("~/Manage/Js") %>
+<%--    <%#Styles.Render("~/Manage/BaseCss") %>--%>
+    <script type="text/javascript">
+        var formValidate = null;
+        function validate_form() {
+            BeginRequest();
+
+            if (!$("#form1").valid()) {
+                EndRequest();
+                return false;
+            } else {
+                try {
+                    //通过Page_IsValid这个值来判断RequiredFieldValidator的验证结果是否有效
+                    if (!Page_IsValid) {
+                        EndRequest();
+                        return false;
+                    }
+                } catch (e) { }
+            }
+
+            if (typeof validateSumit == "function") {
+                return validateSumit();
+            }
+            return true;
+        }
+        function ShowAjaxLoading() {
+            BeginRequest();
+        }
+
+        function HideAjaxLoading() {
+            EndRequest();
+        }
+
+        (function () {
+            BeginRequest();
+        })();
+        $(function () {
+            formValidate = $("#form1").validate({
+                invalidHandler: function (event, validator) {
+                    var errorNumber = validator.numberOfInvalids();
+                },
+                errorPlacement: function (error, element) {
+                    setElementValidStatus(false, element, error.html());
+                },
+                success: function (label, element) {
+                    setElementValidStatus(true, element, label.html());
+                }
+            });
+            if (typeof initValidation == "function") {
+                initValidation();
+            }
+        });
+        function setElementValidStatus(isvalid, element, errorMsg) {
+            if (isvalid) {
+                $(element).css("border-color", "");
+                $(element).removeAttr("title");
+            } else {
+                $(element).css("border-color", "red");
+                $(element).attr("title", errorMsg);
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="master">
+    <form id="form1" runat="server" onsubmit="return validate_form();">
+        <asp:ScriptManager ID="scriptManage" runat="server">
+            <Services>
+                <asp:ServiceReference Path="~/Ajax/AjaxService.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <telerik:RadAjaxLoadingPanel ID="ajaxLoadingPanel" runat="server" OnClientShowing="ShowAjaxLoading" OnClientHiding="HideAjaxLoading">
+        </telerik:RadAjaxLoadingPanel>
+        <telerik:RadAjaxManager ID="ajaxManage" runat="server">
+        </telerik:RadAjaxManager>
+        <div class="body-content">
+            <div class="main">
+                <div class="wrap-container">
+                    <div class="wrap-right">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <uc:ThirdLogoutControl id="thdLogout" runat="server"></uc:ThirdLogoutControl>
+</body>
+</html>

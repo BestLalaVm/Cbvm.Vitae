@@ -1,0 +1,250 @@
+﻿@import url("../BaseFront/StyleSheet.css");
+
+@import url("../BaseManage/ControlSkin.css");
+
+.main .body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding-top: 0px;
+}
+
+.main .body .container .caption {
+	padding: 10px 0px;
+}
+
+.main .body .container .caption h1 {
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.main .body .container .caption .content-time {
+	margin-top: 10px;
+}
+
+.main .body .left .widget-list .container ul li {
+	display: block;
+}
+
+.main .body .user-info {
+	color: rgb(3, 95, 164);
+}
+
+.main .body .user-info .container table th {
+	width: 70px;
+	text-align: left;
+}
+
+.main .body .user-info .container .image {
+	height: 202px;
+}
+
+.main .body .user-info .container .image img {
+	max-width: 210px;
+	max-height: 200px;
+}
+
+.main .body .user-info .container .basic-info,
+    .main .body .user-info .container .image {
+	width: 212px;
+	margin: auto;
+}
+
+.main .body .user-info .personal-info {
+	border-top: 1px dashed #DDD;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+.main .body .user-info .personal-info .row-caption {
+	background-color: rgb(252, 231, 230);
+	padding: 4px 10px;
+	border: 1px solid rgb(252, 231, 230);
+}
+
+.main .body .user-info .personal-info .row-item {
+	padding: 5px 5px 5px 10px;
+}
+
+.main .body .right .project-list .list-item {
+	float: left;
+	min-width: 220px;
+}
+
+.main .body .block-center .project-list .list-item {
+	width: auto;
+	float: none;
+}
+/*begin activity-list */
+.main .body .right .activity-list .list-item {
+	display: block;
+}
+
+/*.main .body .right a {
+    color: rgb(72, 75, 75);
+}*/
+/*end activity-list */
+
+/*Attachment list*/
+.main .body .attachment-list {
+	padding: 2px;
+	width: 100%;
+}
+
+.main .body .attachment-list .caption {
+	background-color: rgb(249, 243, 243);
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.main .body .attachment-list .attachment-item {
+	display: inline-block;
+}
+
+.main .body .attachment-list .attachment-item .label {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.main .body .detail-widget .container fieldset {
+	margin-top: 20px;
+}
+
+.main .body .detail-widget .right {
+	width: auto;
+}
+
+.main .body .detail-widget .action {
+	margin-top: 10px;
+}
+
+.main .body .detail-widget .left {
+	width: 400px;
+}
+
+.main .body .data-time {
+	text-align: right;
+}
+/*block-center*/
+.main .body .block-center .widget {
+	border: 0px;
+}
+
+.main .body .block-center .widget .bar {
+	display: none;
+}
+
+.main .body .block-center .widget .container {
+	margin-left: 0px;
+}
+
+.main .body .right .block-center .search-block {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.main .body .right .block-center .search-block .search {
+	float: right;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.main .body .right .block-center .search-block .search a {
+	position: relative;
+	top: 2px;
+}
+
+.main .body .right .block-right .widget .container {
+	margin-left: auto;
+}
+
+.main .body .right .block-right .activity-list .list-item {
+	width: auto;
+}
+
+.main .body .right .search-block {
+	display: none;
+}
+
+.main .body .right .daily-list ul {
+	list-style-type: circle;
+}
+
+.main .body .list-item {
+	margin: 3px 18px 3px 5px;
+	border-bottom: 1px dashed rgb(193, 193, 193);
+}
+
+.main .body .right .block-right .list-item {
+	margin-right: 10px;
+}
+
+.main .body .right .widget-list .bar .caption {
+	float: none;
+}
+
+.main .body .top-widget .caption {
+	background-position: left;
+	cursor: pointer;
+}
+
+.main .body .top-widget .caption span {
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+}
+
+.main .body .top-widget .expand .caption span {
+	background: url("imgs/expand.gif") no-repeat;
+}
+
+.main .body .top-widget .collapse .caption span {
+	background: url("imgs/collapse.gif") no-repeat;
+}
+
+.main .body .left .block-widget.visit-student-widget .widget-item .detail .row {
+	margin-top: 0px;
+}
+
+.main .body .left .block-widget.visit-student-widget .widget-item .detail .row.name {
+	margin-bottom: 0px;
+}
+
+.main .body .widget .container {
+	margin-left: 20px;
+	padding-bottom: 10px;
+        /*margin-right: 15px;*/
+}
+
+.main .body .widget .container .item-caption {
+	font-weight: bold;
+}
+
+.main .body .widget .container .item-content {
+	min-height: 40px;
+	border-bottom: 1px dashed #ddd;
+	padding-top: 5px;
+}
+
+.main .body .widget .container .row-caption {
+	background-color: rgb(252, 231, 230);
+	padding: 4px 10px;
+	border: 1px solid rgb(252, 231, 230);
+	font-weight: bold;
+}
+
+.main .body .widget .container .row-content {
+	padding-left: 10px;
+}
+
+.main .body .widget .container .row-content td {
+	text-decoration: underline;
+	line-height: 20px;
+}
+
+.main .body .widget .container .student-others .row-content {
+	min-height: 60px;
+}

@@ -1,0 +1,56 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Cbvm.Vitae.Template.Master" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<%@ Register Src="~/Template/UserControl/StudentSearchWidget.ascx" TagName="StudentSearchWidget" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/MenuControl.ascx" TagName="MenuControl" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/StudentTop20Widget.ascx" TagName="StudentTop20Widget" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/UserStatusControl.ascx" TagName="UserStatusControl" TagPrefix="uc" %>
+<%@ Register Src="~/Template/UserControl/EmployedStudentsWidget.ascx" TagName="EmployedStudentsWidget" TagPrefix="uc" %>
+<%@ Register Src="~/UserControl/ThirdLogoutControl.ascx" TagName="ThirdLogoutControl" TagPrefix="uc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%#Scripts.Render("~/Manage/BaseJs") %>
+    <%#Scripts.Render("~/Manage/Js") %>
+    <style type="text/css">
+        .top-navigate {
+            height: 20px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManage" runat="server"></asp:ScriptManager>
+        <div class="main">
+            <uc:userstatuscontrol id="userControl" runat="server"></uc:userstatuscontrol>
+            <div class="head">
+                <uc:studentsearchwidget id="StudentSearchWidget" runat="server"></uc:studentsearchwidget>
+                <div class="menu">
+                    <uc:menucontrol id="MenuControl" runat="server"></uc:menucontrol>
+                </div>
+            </div>
+            <div class="body">
+                <div class="left">
+                    <uc:studenttop20widget id="StudentEvaluateTop20Widget" runat="server" />
+                    <uc:employedstudentswidget id="empStudentWidget" runat="server"></uc:employedstudentswidget>
+                </div>
+                <div class="right">
+                    <asp:ContentPlaceHolder ID="contentMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="footer">
+                <uc:footer id="footer" runat="server"></uc:footer>
+            </div>
+        </div>
+    </form>
+    <uc:ThirdLogoutControl id="thdLogout" runat="server"></uc:ThirdLogoutControl>
+</body>
+</html>

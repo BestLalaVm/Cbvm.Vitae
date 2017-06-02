@@ -1,0 +1,148 @@
+/* clearfix用于父容器直接清除子元素浮动 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+	/* IE < 8 */
+}
+.wrap-container {
+	padding: 50px 0 30px;
+	background: #f2f2f2;
+	width: 100%;
+}
+.container {
+	width: 1000px;
+	padding: 0 150px;
+	margin: auto;
+}
+.content-left {
+	width: 698px;
+	border: 1px rgb(188, 188, 188) solid;
+	padding: 10px 0;
+	background: #fff;
+	float: left;
+}
+.job-title {
+	height: 90px;
+	width: 100%;
+	background: rgb(61, 156, 204);
+	position: relative;
+}
+.job-title s {
+	width: 15px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: -15px;
+	background: url(../images/job-title.png) no-repeat;
+}
+.job-title h1,.job-title h2{
+	margin-left: 30px;
+	color: #fff;
+	line-height: 150%;
+}
+.job-title h1{
+	font-size: 32px;
+}
+.job-title h2{
+	font-size: 20px;
+}
+.job-info {
+	width: 660px;
+	margin-left: 20px;
+	border-bottom: 1px #000 dotted;
+	padding: 15px 0;
+	position: relative;
+	display: inline-block;
+}
+.job-info .wages {
+	height: 40px;
+	line-height: 40px;
+	font-size: 32px;
+	color: #FF6600;
+	font-weight: 700;
+}
+.job-info .collect {
+	position: absolute;
+	right: 0;
+	top: 25px;
+}
+.job-info .collect a {
+	font-size: 18px;
+	color: #3D9CCC;
+}
+.job-info .request{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.job-info .apply{
+	width: 100%;
+	height: 50px;
+}
+.job-info .apply a{
+	width: 120px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	background: rgb(211,65,90);
+	font-size: 24px;
+}
+.job-info .description{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	border-left: 10px rgb(61, 156, 204) solid;
+	padding-left: 20px;
+	display: inline;
+}
+.job-info p{
+	margin-left: 30px;
+	display: inline-block;
+	color: #666;
+	font-size: 16px;
+}
+.content-right{
+	width: 290px;
+	float: right;
+}
+.company{
+	width: 268px;
+	border: 1px rgb(188, 188, 188) solid;
+	padding: 10px;
+	background: #fff;
+}
+.company dt{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	border-left: 10px rgb(61, 156, 204) solid;
+	padding-left: 20px;
+	display: inline;
+}
+.company dd h3.company-logo{
+	text-align: center;
+}
+.company dd h4{
+	font-size: 18px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.company dd p{
+	padding-left: 10px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #333;
+}
+.company dd p span{
+	color: #999;
+}

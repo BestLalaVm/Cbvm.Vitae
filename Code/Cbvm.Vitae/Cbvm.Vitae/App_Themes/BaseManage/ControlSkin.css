@@ -1,0 +1,42 @@
+﻿.rgSelectedRow {
+    background: rgb(226, 241, 207) url() !important;
+}
+.rgSelectedRow * {
+    color: #000 !important;
+}
+
+.rgPagerCell .rgWrap.rgAdvPart {
+    display: none;
+}
+
+.RadRating a, .RadRating a span {
+    background-image: url("img/Sprite.png");
+}
+
+input,button,textarea,select {
+    font-family: 华文楷体;
+    color: #000;
+}
+.RadGrid_Default, .RadGrid_Default .rgMasterTable, .RadGrid_Default .rgDetailTable, .RadGrid_Default .rgGroupPanel table, .RadGrid_Default .rgCommandRow table, .RadGrid_Default .rgEditForm table, .RadGrid_Default .rgPager table, .GridToolTip_Default {
+    font-family: 华文楷体 !important;
+    color: #000;
+    font-size: 16px !important;
+    width: 100%;
+}
+.rgPagerCell .rgWrap input[type='button'],.rgPagerCell .rgWrap input[type='submit'] {
+    width: 20px !important;
+}
+.rgPagerCell .rgWrap.rgNumPart {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.rgEditForm {
+    background-color: #fff !important;
+    display: inline-block !important;
+}
+.rgMasterTable {
+   width: 100%;
+}
+.edit-text {
+    line-height: 24px;
+}

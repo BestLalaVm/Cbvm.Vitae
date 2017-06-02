@@ -1,0 +1,57 @@
+﻿@import url("../BaseManage/StyleSheet.css");
+@import url("../BaseManage/ControlSkin.css");
+*
+{
+    padding:0px;
+    margin:0px;
+}
+body {
+    font-family: 华文楷体;
+    color: #000;
+}
+.button
+{
+    background:url("img/ButtonSprites.png") no-repeat scroll 0 -254px transparent;
+    text-align:center;
+    display:inline-block;
+    line-height:30px;
+    width:80px;
+    margin-left:8px;
+    margin-top:2px;
+    font-size:14px;
+}
+.caption
+{
+    background-color:#D9DDE0;
+    padding:5px;
+    margin:0px;
+}
+.left
+{
+   float:left;
+   margin:5px;
+}
+.right
+{
+    float:right;
+    margin:5px;
+}
+.clear
+{
+    clear:both;
+}
+.condition .container
+{
+   border-bottom:1px solid #C1C1C1;
+}
+table th
+{
+    font-weight:normal;
+}
+table td
+{
+    padding:10px;
+}
+.rgPagerCell .rgWrap.rgAdvPart {
+    display: none;
+}

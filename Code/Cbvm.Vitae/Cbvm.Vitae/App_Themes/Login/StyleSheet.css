@@ -1,0 +1,107 @@
+﻿@import url("../BaseFront/StyleSheet.css");
+
+@import url("../BaseManage/ControlSkin.css");
+
+input[type='submit'], input[type='button'] {
+	cursor: pointer;
+}
+
+.login-block .data-detail {
+	margin-top: 10px;
+}
+
+.login-block .data-detail > div {
+	margin-top: 5px;
+}
+
+.login-block .data-detail tr td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 5px;
+}
+
+.login-block .data-detail tr td label {
+	line-height: 26px;
+}
+
+body .main .body {
+	height: 400px;
+	min-height: auto;
+}
+
+.main .body .widget.login-block {
+	width: 500px;
+	height: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding: 10px;
+	border: 1px solid #C1C1C1;
+}
+
+.login-block .data-detail {
+	margin: 30px auto;
+	width: 300px;
+}
+
+.login-block .caption {
+	font-size: 18px;
+	border-bottom: 1px solid #c1c1c1;
+	padding-bottom: 2px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.login-block .caption h3 {
+	display: inline;
+	width: 410px;
+	font-size: 18px;
+}
+
+.login-block .caption a {
+	display: inline-block;
+	text-decoration: none;
+	color: #069;
+}
+
+.login-block .caption a:hover {
+	text-decoration: underline;
+}
+
+.login-block .caption > span {
+	float: right;
+}
+
+.login-block .data-detail .action {
+	position: relative;
+}
+
+.login-block .data-detail .action a {
+	position: absolute;
+	top: 4px;
+	left: 80px;
+}
+
+.hintText {
+	cursor: text !important;
+}
+
+body .main .head {
+	height: 150px;
+	background-image: url("img/head-new.png");
+}
+
+body .main .login-container {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 20px;
+	margin-top: 20px;
+	padding-bottom: 15px;
+	background-color: rgb(249, 243, 243);
+	border-radius: 15px;
+}
+
+body #TB_window .thick-block .thick-content.sucess {
+	left: 50px !important;
+}

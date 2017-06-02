@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Presentation.Criteria.Student
+{
+    public class StudentCourseScoreCriteria:BaseStudentCriteria
+    {
+        public int Id
+        {
+            get; set;
+        }
+
+        public string CourseName
+        {
+            get; set;
+        }
+
+        public string CourseCode
+        {
+            get; set;
+        }
+    }
+}

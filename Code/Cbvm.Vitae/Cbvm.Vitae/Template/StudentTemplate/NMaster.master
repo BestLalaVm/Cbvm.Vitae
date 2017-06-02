@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Template/StudentTemplate/Master.Master"
+    AutoEventWireup="true" CodeBehind="NMaster.master.cs" Inherits="Cbvm.Vitae.Template.StudentTemplate.NMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="contentHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="ContentLeft" runat="server" ContentPlaceHolderID="contentLeftContainer">
+   <asp:ContentPlaceHolder ID="contentLeftContainer" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contentMain" runat="server">
+    <div class="block-center">
+        <div class="navigate-bar">
+            <asp:Literal ID="ltlNaviagte" runat="server"></asp:Literal>
+        </div>
+        <asp:ContentPlaceHolder ID="contentCenter" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="block-right">
+        <asp:ContentPlaceHolder ID="contentRight" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <br class="clear" />
+</asp:Content>

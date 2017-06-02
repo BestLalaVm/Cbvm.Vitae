@@ -1,0 +1,193 @@
+﻿@import url("../BaseManage/StyleSheet.css");
+
+@import url("../BaseManage/ControlSkin.css");
+
+.body-content .main .wrap-right .user-left {
+	float: left;
+		/*margin-right: 20px;*/
+}
+
+.body-content .main .wrap-right .user-right {
+	float: left;
+	position: relative;
+}
+
+.body-content .main .wrap-right .user-right.upload-image .image-container {
+	border: 1px solid #ddd;
+	width: 210px;
+	height: 200px;
+	text-align: center;
+}
+
+.body-content .main .wrap-right .file-Upload input[type="file"] {
+    /*width:42px !important;*/
+	right: 70px;
+	width: 87px;
+	height: 30px;
+}
+
+.body-content .main .wrap-container .wrap-right .user-introduce .action {
+	padding-right: 200px;
+}
+
+.body-content .main .wrap-container .wrap-right .dictory-manage .action,
+.body-content .main .wrap-container .wrap-right .photo-manage .navigate,
+.master .batch-upload.upload-container .action {
+	text-align: left;
+	padding: 10px;
+	color: #915833;
+	font-weight: 200;
+	border-bottom: 1px solid #E6D6AB;
+	background-color: #FDFAF0;
+	margin-top: 0px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+.body-content .main .wrap-container .wrap-right .batch-upload.upload-container .action {
+	margin-top: 0px;
+	text-align: left;
+}
+
+.body-content .main .wrap-container .wrap-right .photo-manage .action {
+	text-align: left;
+	margin-left: 6px;
+}
+
+.dictory-manage .dictory-list .dictory-item,
+.photo-manage .photo-list .photo-item {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-bg,
+    .photo-manage .photo-list .photo-item .photo-bg {
+	border: 1px solid #E6D6AB;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-bg {
+	height: 140px;
+	width: 140px;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-bg img {
+	max-height: 140px;
+	max-width: 140px;
+}
+
+.photo-manage .photo-list .photo-item.selected .photo-bg {
+	border-color: #FFB424;
+}
+
+.photo-manage .photo-list .photo-item:hover .photo-bg {
+	border-color: #FFB424;
+	border-width: 2px;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-info,
+    .photo-manage .photo-list .photo-item .photo-info {
+	margin-top: 2px;
+	padding-bottom: 10px;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-info .info-item,
+        .photo-manage .photo-list .photo-item .photo-info .info-item {
+	line-height: 25px;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-info .info-item .total-page {
+	width: 45px;
+	display: inline-block;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-info .info-item .dictory-action {
+	display: inline-block;
+	text-align: right;
+}
+
+.dictory-manage .dictory-list .dictory-item .photo-info .info-item .dictory-action span {
+	margin-left: 5px;
+}
+
+.batch-upload.upload-container .files-list .caption {
+	padding: 5px;
+	background-color: whiteSmoke;
+	border-bottom: 1px solid #ddd;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.batch-upload.upload-container .files-list .file-item:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.batch-upload.upload-container .files-list thead {
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+.batch-upload.upload-container .files-list .file {
+	width: 160px;
+}
+
+.batch-upload.upload-container .files-list .text,
+.batch-upload.upload-container .files-list .text input {
+	width: 200px;
+}
+
+.batch-upload.upload-container .files-list th, .upload-container .files-list td {
+	text-align: left;
+}
+
+ /*.user-recommend {
+            padding-bottom: 30px;
+        }*/
+
+            .user-recommend table {
+                border: 1px solid #ddd;
+            }
+
+                .user-recommend table .label {
+                    width: 80px;
+                    display: inline-block;
+                }
+
+            .user-recommend .customize-text {
+                height: 55px;
+                width: 100%;
+                border: 0px;
+                font-size: 20px;
+            }
+
+        .body-content .main .user-recommend table th {
+            font-weight: normal;
+            min-width: 80px;
+            padding-right: 10px;
+            text-align: center;
+        }
+
+        .user-recommend table th, .user-recommend table td {
+            border: 1px solid #ddd;
+            border-left-width: 0px;
+            border-top-width: 0px;
+            /*font-size:22px;*/
+        }
+
+            .user-recommend table td:last-child {
+                border-right-width: 0px;
+            }
+
+        .body-content .main .wrap-right .user-recommend .user-right {
+            float: none;
+            margin: 5px;
+            margin-left: 20px;
+        }
+.user-recommend .action input[type='submit'],.user-recommend .action button {
+    width:80px !important;
+    height:30px !important;
+    font-size:16px;
+}

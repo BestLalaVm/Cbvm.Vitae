@@ -1,0 +1,4 @@
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\bin\Debug\DbDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\bin\Debug\DbDataContext.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\obj\Debug\DbDataContext.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae\DbDataContext\obj\Debug\DbDataContext.pdb
