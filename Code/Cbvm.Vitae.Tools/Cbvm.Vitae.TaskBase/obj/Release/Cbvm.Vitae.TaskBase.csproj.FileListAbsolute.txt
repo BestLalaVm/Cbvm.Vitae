@@ -1,0 +1,4 @@
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.TaskBase\bin\Release\Cbvm.Vitae.TaskBase.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.TaskBase\bin\Release\Cbvm.Vitae.TaskBase.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.TaskBase\obj\Release\Cbvm.Vitae.TaskBase.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.TaskBase\obj\Release\Cbvm.Vitae.TaskBase.pdb

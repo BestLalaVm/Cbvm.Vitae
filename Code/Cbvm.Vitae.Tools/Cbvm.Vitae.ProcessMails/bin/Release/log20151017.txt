@@ -1,0 +1,61 @@
+----Time: 2015/10/17 17:16:56 Content:G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ProcessMails\bin\Release\Downloads\20151017\----
+----Time: 2015/10/17 17:17:01 Content:Begin to run the task:Cbvm.Vitae.ProcessMails----
+----Time: 2015/10/17 17:17:18 Content:
+                 begin tran tran1
+                    INSERT INTO [MessageBox]
+                       ([Subject]
+                       ,[Content]
+                       ,[CreateTime]
+                       ,[ReceiverType]
+                       ,[ReceiverKey]
+                       ,[SenderType]
+                       ,[SenderKey]
+                       ,[IsReaded])
+                    SELECT 
+                      Name, 
+                      Name+'<BR/>时间:'+cast(BeginTime as nvarchar)+' <br/>地址:'+isnull(Address,' '),
+                      GETDATE(),
+                      0,
+                      c.StudentNum,
+                      9,
+                      D.UserName,
+                      0
+                    FROM JobFairManage A JOIN JobFairManageCollege B ON A.ID=B.JobFareId 
+                         JOIN Student C ON C.CollegeCode=B.CollegeCode
+                         JOIN UniversityAdmin D ON D.UniversityCode=A.UniversityCode 
+                    WHERE C.CollegeCode='4' and a.id=XM100001A054 AND
+                          NOT EXISTS(SELECT 1 FROM JobFairManageCollege T1 WHERE T1.JobFareId=A.ID AND T1.IsSentMail=0 AND T1.CollegeCode=B.CollegeCode)
+
+                    INSERT INTO [MessageBox]
+                               ([Subject]
+                               ,[Content]
+                               ,[CreateTime]
+                               ,[ReceiverType]
+                               ,[ReceiverKey]
+                               ,[SenderType]
+                               ,[SenderKey]
+                               ,[IsReaded])
+                    SELECT 
+                      Name, 
+                      Name+'<BR/>时间:'+cast(BeginTime as nvarchar)+' <br/>地址:'+isnull(Address,' '),
+                      GETDATE(),
+                      8,
+                      c.UserName,
+                      9,
+                      D.UserName,
+                      0
+                    FROM JobFairManage A JOIN JobFairManageCollege B ON A.ID=B.JobFareId 
+                         JOIN CollegeAdmin C ON C.CollegeCode=B.CollegeCode  
+                         JOIN UniversityAdmin D ON D.UniversityCode=A.UniversityCode 
+                    WHERE C.CollegeCode='4' and a.id=XM100001A054 AND 
+                          NOT EXISTS(SELECT 1 FROM JobFairManageCollege T1 WHERE T1.JobFareId=A.ID AND T1.IsSentMail=0 AND T1.CollegeCode=B.CollegeCode)
+
+                    UPDATE JobFairManageCollege
+                       SET IsSentMail=1, SentMailTime=GETDATE()
+                      WHERE  JobFareId=XM100001A054
+                commit tran tran1
+            ----
+----Time: 2015/10/17 17:17:50 Content:G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ProcessMails\bin\Release\Downloads\20151017\----
+----Time: 2015/10/17 17:17:56 Content:Begin to run the task:Cbvm.Vitae.ProcessMails----
+----Time: 2015/10/17 17:19:10 Content:G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ProcessMails\bin\Release\Downloads\20151017\----
+----Time: 2015/10/17 17:19:28 Content:Begin to run the task:Cbvm.Vitae.ProcessMails----

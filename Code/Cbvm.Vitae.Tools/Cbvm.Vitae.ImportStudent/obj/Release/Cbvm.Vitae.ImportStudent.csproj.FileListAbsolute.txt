@@ -1,0 +1,8 @@
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\bin\Release\Cbvm.Vitae.ImportStudent.exe.config
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\bin\Release\Cbvm.Vitae.ImportStudent.exe
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\bin\Release\Cbvm.Vitae.ImportStudent.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\bin\Release\Cbvm.Vitae.TaskBase.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\bin\Release\Cbvm.Vitae.TaskBase.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\obj\Release\Cbvm.Vitae.ImportStudent.csprojResolveAssemblyReference.cache
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\obj\Release\Cbvm.Vitae.ImportStudent.exe
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudent\obj\Release\Cbvm.Vitae.ImportStudent.pdb

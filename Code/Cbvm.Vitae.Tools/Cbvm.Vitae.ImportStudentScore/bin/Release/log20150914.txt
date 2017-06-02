@@ -1,0 +1,26 @@
+----Time: 2015/9/14 21:28:45 Content:G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\bin\Release\Downloads\20150914\----
+----Time: 2015/9/14 21:28:45 Content:Begin to run the task:ImportStudentScoreTask----
+----Time: 2015/9/14 21:28:45 Content:Begin to export datas from oracle----
+----Time: 2015/9/14 21:28:45 Content:with sql:
+                SELECT 
+                  XN,XQ,XH,CJ,XF,KCMC
+                FROM (
+                SELECT 
+                  ROWNUM AS XINDEX, 
+                  XN,XQ,XH,CJ,XF,KCMC
+                FROM view_xscj_jxq ) A WHERE XINDEX>= 0 AND XINDEX<= 20000
+            ----
+----Time: 2015/9/14 21:28:48 Content:System.Data.OracleClient.OracleException (0x80131938): ORA-12154: TNS: 无法解析指定的连接标识符
+
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at Cbvm.Vitae.TaskBase.TaskBase.ExtractDatasFromOracle(String sql, Action`1 readAction) in g:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.TaskBase\TaskBase.cs:line 60
+   at Cbvm.Vitae.ImportStudentScore.ImportStudentScoreTask.ExportDatas2Local() in g:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\ImportStudentScoreTask.cs:line 60----
+----Time: 2015/9/14 21:28:48 Content:System.Data.OracleClient.OracleException (0x80131938): ORA-12154: TNS: 无法解析指定的连接标识符
+
+   at Cbvm.Vitae.ImportStudentScore.ImportStudentScoreTask.ExportDatas2Local() in g:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\ImportStudentScoreTask.cs:line 81
+   at Cbvm.Vitae.ImportStudentScore.ImportStudentScoreTask.ExecuteRunning() in g:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\ImportStudentScoreTask.cs:line 22
+   at Cbvm.Vitae.TaskBase.TaskBase.Run() in g:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.TaskBase\TaskBase.cs:line 26----
+----Time: 2015/9/14 21:28:48 Content:Finish to run the task:ImportStudentScoreTask----

@@ -1,0 +1,8 @@
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\bin\Release\Cbvm.Vitae.ImportStudentScore.exe.config
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\bin\Release\Cbvm.Vitae.ImportStudentScore.exe
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\bin\Release\Cbvm.Vitae.ImportStudentScore.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\bin\Release\Cbvm.Vitae.TaskBase.dll
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\bin\Release\Cbvm.Vitae.TaskBase.pdb
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\obj\Release\Cbvm.Vitae.ImportStudentScore.csprojResolveAssemblyReference.cache
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\obj\Release\Cbvm.Vitae.ImportStudentScore.exe
+G:\项目\履历系统\20141220\Code\Cbvm.Vitae.Tools\Cbvm.Vitae.ImportStudentScore\obj\Release\Cbvm.Vitae.ImportStudentScore.pdb

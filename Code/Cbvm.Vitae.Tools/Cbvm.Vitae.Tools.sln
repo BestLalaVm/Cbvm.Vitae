@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cbvm.Vitae.ImportStudent", "Cbvm.Vitae.ImportStudent\Cbvm.Vitae.ImportStudent.csproj", "{7C265A7A-1C8B-4421-93CE-959B50E39867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cbvm.Vitae.TaskBase", "Cbvm.Vitae.TaskBase\Cbvm.Vitae.TaskBase.csproj", "{86973F9B-42EB-4E7F-A7FB-69F3BE825714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cbvm.Vitae.ImportTeacher", "Cbvm.Vitae.ImportTeacher\Cbvm.Vitae.ImportTeacher.csproj", "{0411D0EC-90B3-4657-801C-5C003FAB7AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cbvm.Vitae.ImportStudentScore", "Cbvm.Vitae.ImportStudentScore\Cbvm.Vitae.ImportStudentScore.csproj", "{F67D2A71-F745-4779-B86E-1B48D6670018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cbvm.Vitae.ProcessMails", "Cbvm.Vitae.ProcessMails\Cbvm.Vitae.ProcessMails.csproj", "{526329AD-5FF0-4FDB-A58D-E9D192F98DD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C265A7A-1C8B-4421-93CE-959B50E39867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C265A7A-1C8B-4421-93CE-959B50E39867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C265A7A-1C8B-4421-93CE-959B50E39867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C265A7A-1C8B-4421-93CE-959B50E39867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86973F9B-42EB-4E7F-A7FB-69F3BE825714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86973F9B-42EB-4E7F-A7FB-69F3BE825714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86973F9B-42EB-4E7F-A7FB-69F3BE825714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86973F9B-42EB-4E7F-A7FB-69F3BE825714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0411D0EC-90B3-4657-801C-5C003FAB7AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0411D0EC-90B3-4657-801C-5C003FAB7AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0411D0EC-90B3-4657-801C-5C003FAB7AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0411D0EC-90B3-4657-801C-5C003FAB7AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67D2A71-F745-4779-B86E-1B48D6670018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67D2A71-F745-4779-B86E-1B48D6670018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67D2A71-F745-4779-B86E-1B48D6670018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67D2A71-F745-4779-B86E-1B48D6670018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526329AD-5FF0-4FDB-A58D-E9D192F98DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526329AD-5FF0-4FDB-A58D-E9D192F98DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526329AD-5FF0-4FDB-A58D-E9D192F98DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526329AD-5FF0-4FDB-A58D-E9D192F98DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
